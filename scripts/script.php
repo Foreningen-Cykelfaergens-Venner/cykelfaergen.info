@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<script type="text/javascript" src="https://<?= $mainHost;?>/js/jquery.migrate.js"></script>
-<script type="text/javascript" src="https://<?= $mainHost;?>/js/slick/slick.min.js"></script>
-<!-- <script src="https://<?= $mainHost;?>/js/reviews.js?v=<?php echo time(); ?>" async defer></script> -->
+<script type="text/javascript" src="/js/jquery.migrate.js"></script>
+<script type="text/javascript" src="/js/slick/slick.min.js"></script>
+<!-- <script src="/js/reviews.js?v=<?php echo time(); ?>" async defer></script> -->
 <script type="text/javascript" defer>
     let numbersOfSlides = 3;
     if(window.innerWidth <= 900){

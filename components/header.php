@@ -249,9 +249,9 @@ if(isset($_GET["fbclid"])){
   <meta name="facebook-domain-verification" content="ly0ck4yypwbkrqpu0sxs041hkk3n4f" />
   <title><?= $title ?></title>
   <meta name="description" content="<?= $description ?>">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/slider.css">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/slider.css">
   <?= $tourdefrance;?>
   <?php if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") !== false || strpos($_SERVER["HTTP_HOST"], "forening.cykelfaergen.info") !== false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) { ?>
     <link rel="stylesheet" href="/styles/forening.css">
@@ -271,24 +271,24 @@ if(isset($_GET["fbclid"])){
   <link rel="alternate" hreflang="en-au" href="https://www.bicycleferry.com<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="en-ca" href="https://www.bicycleferry.com<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="en-in" href="https://www.bicycleferry.com<?= $_SERVER["REQUEST_URI"]; ?>">
-  <link rel="apple-touch-icon" sizes="57x57" href="https://<?= $mainHost;?>/assets/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="https://<?= $mainHost;?>/assets/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="https://<?= $mainHost;?>/assets/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://<?= $mainHost;?>/assets/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="https://<?= $mainHost;?>/assets/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="https://<?= $mainHost;?>/assets/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="https://<?= $mainHost;?>/assets/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="https://<?= $mainHost;?>/assets/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://<?= $mainHost;?>/assets/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="https://<?= $mainHost;?>/assets/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://<?= $mainHost;?>/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="https://<?= $mainHost;?>/assets/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://<?= $mainHost;?>/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
   <link rel="canonical" href="https://<?= $_SERVER["HTTP_HOST"];?><?= $_SERVER["REQUEST_URI"]; ?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/fonts/Material-Icons.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/fonts/Roboto.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/fonts/Bellefair.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/fonts/Raleway.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="/styles/fonts/Material-Icons.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="/styles/fonts/Roboto.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="/styles/fonts/Bellefair.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="/styles/fonts/Raleway.css?v=1.<?= time();?>">
   <script src="https://kit.fontawesome.com/bf8a30ff13.js" crossorigin="anonymous"></script>
   <style>
   .material-symbols-outlined {
@@ -450,8 +450,8 @@ if(isset($_GET["fbclid"])){
         "Cykelfærgen Rødsand",
         "Fähre zwischen Dänemark & Deutschland"
       ],
-      "url": "https://<?= $mainHost;?>",
-      "logo": "https://<?= $mainHost;?>/assets/logo/logo.svg",
+      "url": "",
+      "logo": "/assets/logo/logo.svg",
       "sameAs": [
         "https://www.facebook.com/cykelfargen",
         "https://www.instagram.com/cykelfaergen.flensborg.fjord/"
