@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="334.01" height="284.567" viewBox="0 0 334.01 284.567">
+  <g id="Group_130" data-name="Group 130" transform="translate(13323.192 -1158.271)">
+    <g id="Group_128" data-name="Group 128" transform="translate(-13322.5 1158.271)">
+      <path id="Path_11" data-name="Path 11" d="M91.694,0a91.694,91.694,0,0,1,91.694,91.694c0,50.641-41.053-25.668-91.694-25.668S0,142.336,0,91.694A91.694,91.694,0,0,1,91.694,0Z" transform="translate(110.981 166.895) rotate(-16)" fill="#eabd02"/>
+      <line id="Line_15" data-name="Line 15" y1="31.985" x2="33.051" transform="translate(298.527 126.874)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_16" data-name="Line 16" y1="21.323" x2="46.911" transform="translate(75.698 250.55)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_17" data-name="Line 17" y1="61.838" x2="38.382" transform="translate(266.542 75.698)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_18" data-name="Line 18" y1="125.808" transform="translate(223.896)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_19" data-name="Line 19" y1="14.926" x2="92.757" transform="translate(25.588 223.896)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_20" data-name="Line 20" x2="118.345" y2="34.117" transform="translate(0 154.595)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_21" data-name="Line 21" x2="49.044" y2="99.154" transform="translate(132.205 34.117)" fill="none" stroke="#eabd02" stroke-width="5"/>
+      <line id="Line_22" data-name="Line 22" x2="49.044" y2="47.978" transform="translate(92.757 111.948)" fill="none" stroke="#eabd02" stroke-width="5"/>
+    </g>
+    <path id="Union_9" data-name="Union 9" d="M25.751,89.877C9.443,88.361-1.96,75.932.281,62.115c1.461-9,8.352-16.371,17.487-20q.152-.21.308-.419C17.192,34.428,21.339,26.26,30,20.15,39.335,13.557,51.47,11.1,61.458,13,74.48,3.538,94.9-1.594,116.8.442c32.871,3.055,53.681,28.438,53,49.463,2.315,6.763,1.551,8.749-1.712,8.138-2.392,4.008-6.985.094-13.816-6.051-2.288-1.108-4.779-2.287-7.455-3.465-15.039-6.627-35.9-13.252-59.25-7.307C49.186,50.992,41.156,82.789,31.66,88.4c-.138,1.023-1.194,1.593-3.68,1.593C27.336,89.994,26.6,89.955,25.751,89.877Z" transform="matrix(0.966, -0.259, 0.259, 0.966, -13215.35, 1355.911)" fill="#b7b7b7" opacity="0.885"/>
+  </g>
+</svg>
