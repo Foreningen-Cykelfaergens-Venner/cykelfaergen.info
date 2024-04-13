@@ -1,1 +1,0 @@
-const ads = window.ads = true;

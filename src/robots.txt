@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /setlang
-Disallow: /frivillige-login
-Sitemap: https://www.cykelfaergen.info/sitemap.xml
