@@ -1,0 +1,26 @@
+/* hebrew */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./montserrat/montserrat-v25-latin-regular.woff2") format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./montserrat/montserrat-v25-latin-regular.woff2") format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./montserrat/montserrat-v25-latin-regular.woff2") format('woff2');
+  }
+  

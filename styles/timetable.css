@@ -1,0 +1,309 @@
+*{
+  box-sizing: border-box;
+}
+.cf{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cf-api-poweredBy{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 15px;
+  color: #046c6d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cf-api-poweredBy.align-right{
+  justify-content: flex-end;
+}
+
+.cf-api-poweredBy:hover{
+  color: #7a7a7a;
+}
+
+.cf-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: right;
+}
+
+.cf-api-poweredBy img{
+  object-fit: contain;
+  margin-left: 15px;
+}
+
+.cf-timetable-heading{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.cf-timetable-heading img{
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+/* Timetable design */
+.timetable-heading{
+    font-size: 2.5em;
+  }
+  
+  .timeTable{
+    width: 100%;
+  }
+  
+  .flex-flip, .cf-timetable{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .ferry{
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    font-size: 1.17em;
+    font-weight: 100;
+    font-family: "Raleway", "Arial";
+  }
+  
+  .route{
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    font-size: 1.27em;
+    scroll-margin: 3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .timetable-active{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+  
+  .timetable-dates{
+    
+  }
+  
+  .stop{
+    display: inline-block;
+  }
+  
+  .harbor, .cf-harbor{
+    background-color: #046c6d;
+    color: #fff;
+    padding: 30px 15px;
+    margin: 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.025rem;
+    border: none;
+    letter-spacing: .095em;
+  }
+  
+  .harbor:focus, .harbor:focus-within, .harbor:focus-visible{
+    outline: 1px solid #046d33;
+    outline-offset: 2px;
+  }
+
+  .harbor:focus .departureTime, .harbor:focus-within .departureTime, .harbor:focus-visible .departureTime{
+    height: 100%;
+    grid-template-rows: 1fr;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+  
+  .stop.flex{
+    display: block;
+    flex-direction: column;
+  }
+  
+  .departureTime{
+    font-size: 14px;
+    padding: 0px 15px;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0.21, 0.66, 0.74, 0.32);
+    display: grid;
+    grid-template-rows: 0fr;
+    background-color: #dedede;
+  }
+  
+  .stop:last-of-type .departureTime{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .departureTime-container{
+    min-height: 0;
+  }
+  
+  .departureTime.show, .departureTime:has(.schedule-time.current){
+    height: 100%;
+    grid-template-rows: 1fr;
+  }
+  
+  .harbor .arrowDown:has(.schedule-time.current){
+    transform: rotate(-135deg) translate(-3px, -4px);
+  }
+  
+  .departureTime p{
+    text-align: center;
+  }
+  
+  .departureTime time{
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #c4c4c4;
+    background-color: transparent;
+    display: block;
+  }
+  
+  .schedule-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    overflow: hidden;
+  }
+  
+  .schedule-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.space-around{
+  justify-content: space-around;
+}
+
+  .route-line{
+    width: 80%;
+    height: 2px;
+    padding: 0px 2px;
+    background-color: #c4c4c4;
+    color: #c4c4c4;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .route .route-line{
+    width: 80px;
+    margin: 0 10px;
+    color: #000;
+    background-color: #000;
+  }
+  
+  .harbor .route-line{
+    width: 75%;
+  }
+  
+  .cf-harbor .route-line{
+    width: 65%;
+  }
+
+  .route-line::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    border-bottom: transparent;
+    border-left: transparent;
+  }
+  
+  .route-line::after{
+    right: 0;
+  }
+  
+  .current .route-line::after{
+    border-top: 2px solid #00791a;
+    border-right: 2px solid #00791a;
+  }
+  
+  .current .route-line{
+    background-color: #00791a;
+  }
+  
+  .current time{
+    border: 2px solid #00791a;
+    background-color: #00791a;
+    color: #fff;
+  }
+  
+  .stop-place{
+    padding: 5px;
+  }
+  
+  .stop-time.--highlight{
+    background-color: rgb(252, 221, 67);
+    color: #000 !important;
+  }
+
+  .arrow {
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+    transition: transform .25s ease-in-out;
+  }
+
+  .arrowDown{
+    transform: rotate(45deg);
+    transition: transform 1s ease-in-out;
+    transform-origin: center center;
+    margin-right: 20px;
+    float: right;
+  }
+
+  .arrowUp{
+    transform: rotate(-135deg) translate(-3px, -4px);
+  }
+
+  .cta {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #046c6d;
+    margin-bottom: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cf .cta{
+  transition: all .25s ease-in-out;
+}
+
+.cf .cta:hover{
+  filter: saturate(.5);
+}
+
+@media screen and (min-width: 250px) and (max-width: 1100px) {
+  .cf .route-line {
+    width: 30%;
+  }
+  
+  .cf-harbor .route-line{
+    width: 20%;
+  }
+
+  .cf-timetable-heading{
+    font-size: 1em;
+  }
+}

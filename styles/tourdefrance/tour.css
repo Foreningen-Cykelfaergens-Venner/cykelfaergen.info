@@ -1,0 +1,440 @@
+/* TDF Header */
+::selection {
+    background-color: var(--tourDeFranceColor);
+    color: #000;
+}
+
+.main-header.tourdefrance{
+    border-top: 10px solid var(--tourDeFranceColor);
+    background: transparent;
+    color: #000;
+    position: fixed;
+    top: 0;
+    font-family: Galibier,Helvetica,Arial,sans-serif;
+}
+
+.tourdefrance .header ul li a{
+    color: #fff;
+}
+
+.tourdefrance .header{
+    border-bottom: 1px solid rgb(148, 148, 148);
+    padding: 0px 30px;
+    transition: all .5s ease-in-out;
+    color: #fff;
+}
+
+.tourdefrance .header.bg{
+    background: rgb(255, 255, 255);
+}
+
+.tourdefrance .header.bg ul li a{
+    color: rgb(0, 0, 0);
+}
+
+.tourdefrance .lang_container{
+    background: #fff;
+}
+
+.tourdefrance .lang_container a{
+    color: #000 !important;
+}
+
+.tourdefrance .header.bg .lang_container{
+    background: rgb(255, 255, 255);
+}
+
+.tourDeNavigation{
+    width: 500px;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+    position: absolute;
+    right: -200%;
+    background: #1b191a;
+    color: #fff;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.32);
+    transition: all .5s ease-in-out;
+}
+
+.tourDeNavigation__header{
+    padding: 15px;
+}
+
+.tourDeNavigation__content{
+    padding: 15px;
+    font-weight: bold;
+}
+
+.tourDeNavigation__content ul{
+    list-style-type: none;
+}
+
+.tourDeNavigation__content ul li a{
+    padding: 15px;
+    font-size: 25px;
+    display: block;
+    color: #fff;
+}
+
+.tourDeNavigation__content ul li a:hover{
+    text-decoration: none;
+    color: var(--tourDeFranceColor);
+}
+
+.tourDeNavigation.show{
+    right: 0;
+}
+
+.tdfMenuClose{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sideMenu{
+    display: flex;
+    float: right;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sideMenu .menu_line {
+    width: 35px;
+    height: 3px;
+    background-color: #1b191a;
+    margin: 9px 0;
+    transition: all .5s ease-in-out;
+}
+
+.tourdefrance .header ul li a:hover:after, .tourdefrance .header ul li a:focus:after{
+    border-top: 4px solid var(--tourDeFranceColor);
+}
+
+.tdf-cta{
+    padding: 15px 45px;
+    background: var(--tourDeFranceColor);
+    margin: 15px 0px;
+    color: #000;
+    display: block;
+    font-weight: bold;
+    width: max-content;
+    cursor: pointer;
+    transform: skew(12deg);
+}
+
+.tdf-cta:hover{
+    text-decoration: none;
+}
+
+.tdfbanner{
+    width: 100%;
+    min-height: 850px;
+    background: rgba(0, 0, 0, 0.685);
+    background-image: url("https://www.cykelfaergen.info/images/bg/AdobeStock_105076852.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0px;
+    border-bottom: 10px solid var(--tourDeFranceColor);
+}
+
+.tdfbanner .tdfbanner-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: 0px 0px;
+    opacity: .6;
+}
+
+.tdfbanner__content{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    height: 100%;
+}
+
+.tdfbanner__LeftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tdfbanner__RightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tdfbanner__footer{
+    position: absolute;
+    bottom: 0;
+    transform: rotateX(180deg);
+    background: var(--tourDeFranceColor);
+    width: 30%;
+    height: 180px;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.tdfbanner__footer.--header{
+    top: 0;
+    right: 0;
+    transform: rotate(180deg) rotateX(180deg);
+}
+
+.tdfnews{
+    width: 400px;
+    height: 200px;
+    background: #fff;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+.--tdffooter{
+    padding: 0px 8rem;
+    color: #000;
+    top: 30px;
+}
+
+.tdf-instagram{
+    width: 90%;
+    height: 600px;
+    background: var(--tourDeFranceColor);
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.tdf-instagram .content{
+    margin-left: 10%;
+}
+
+.tdfbanner-title{
+    color: var(--tourDeFranceColor);
+    font-size: 56px;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.tdfbanner-title2{
+    font-size: 36px;
+}
+
+.TDFcounterContainer{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+}
+
+.tdfCounter{
+    margin: 0;
+    display: flex;
+    transform: skew(-12deg);
+    font-family: Galibier,Helvetica,Arial,sans-serif;
+}
+
+.tdf-counter{
+    color: #000;
+}
+
+.tdfCounter__item{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid;
+}
+
+.tdfCounter__item:last-child{
+    border-right: none;
+}
+
+.tdfCounter__item-number{
+    padding: 15px;
+    font-size: 30px;
+}
+
+.tdfCounter__item-type{
+    background: rgb(46, 46, 46);
+    padding: 15px;
+    font-size: 25px;
+}
+
+.grid-75x25{
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    gap: 16px;
+}
+
+/* Tabel */
+.tdfTabel th{
+    background-color: var(--tourDeFranceColor);
+    color: #000;
+}
+
+.tdfTabel, .tdfTabel th, .tdfTabel td{
+    border: 1.5px solid #000;
+}
+
+.tdfTabel tr:nth-child(even) {
+    background-color: #fff;
+}
+
+
+/* TDF Card */
+.tdfCard{
+    position: relative;
+    width: 284px;
+    height: 458px;
+    border: 5px solid #000;
+}
+
+.tdfCard__image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.tdfCard__overlay{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0,0,0,1));
+}
+
+.tdfCard__content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    color: #fff;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tdf-content{
+    margin: 50px 0px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoSideBanner{
+    /* --tourDeFranceColor: rgb(240, 224, 1); */
+
+    width: 100%;
+    max-width: 300px;
+    background: var(--tourDeFranceColor);
+    height: 500px;
+
+    color: rgb(0, 0, 0);
+    margin: auto;
+}
+
+.infoSideBanner__content{
+    padding: 15px;
+}
+
+/* TDF Footer */
+
+.footer.tourdefrance{
+    border-top: 10px solid var(--tourDeFranceColor);
+}
+
+.footer.tourdefrance .legalc{
+    background: var(--tourDeFranceColor);
+}
+
+.footer.tourdefrance .legalc .terms, .footer.tourdefrance .legalc .copy, .footer.tourdefrance .terms a, .footer.tourdefrance .copy a{
+    color: #000;
+}
+
+.footer.tourdefrance .terms a:hover, .footer.tourdefrance .copy a:hover{
+    color: rgb(160, 160, 160);
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px){
+
+    .tourDeNavigation{
+        width: 100%;
+    }
+
+    .menu_icon{
+        display: none !important;
+    }
+
+    .tdfbanner .tdfbanner-img{
+        object-position: center;
+    }
+
+    .tdfbanner__content{
+        padding: 15px;
+        width: 100%;
+    }
+
+    .TDFcounterContainer{
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+
+    .tdfCounter__item-type{
+        font-size: 20px;
+    }
+
+    .grid-75x25{
+        grid-template-columns: 1fr;
+        display: block;
+    }
+
+    .tdf-counter{
+        color: rgb(255, 255, 255);
+    }
+
+    .tourdefrance .navigation{
+        background: rgba(255,255,255, .9);
+        box-shadow: 0 10px 17px rgba(0, 0, 0, 0.32);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+    }
+
+    .tourdefrance .header ul li a{
+        color: #000;
+    }
+
+    .tdfCounter{
+        text-shadow: 1px 0px 1px #000;
+        font-size: 50px;
+    }
+
+    .tdfbanner__footer{
+        width: 70%;
+        height: 200px;
+    }
+
+    .tdfCard{
+        width: 100%;
+    }
+}
