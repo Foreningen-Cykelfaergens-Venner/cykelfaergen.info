@@ -2,6 +2,7 @@
     "name": "vendor/cykelfaergen-flensborg-fjord",
     "description": "A short description of your project",
     "type": "project",
+    "license": "MIT",
     "require": {
         "php": "^7.4",
         "monolog/monolog": "^2.0"
@@ -17,5 +18,6 @@
             "email": "felix.schultz@engapho.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
