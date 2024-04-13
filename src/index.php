@@ -2,14 +2,9 @@
 /* ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); */
-ini_set("session_cookie.domain", ".".preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]));
-session_start();
 //echo $ip;
 $mainHost = "www.".preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]);
 /* $img = "https://".$mainHost."/newsroom/news-img/IMG_1753-min.jpg"; */
-?>
-<?php
-include("./components/header.php");
 ?>
 <?php
 if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK") {

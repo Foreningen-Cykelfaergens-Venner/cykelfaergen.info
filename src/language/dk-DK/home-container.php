@@ -6,7 +6,7 @@
         </defs>
         <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07"/>
     </svg>
-    <?php include("./components/trustpilot-integration.php"); ?>
+    <?php include($root."/components/trustpilot-integration.php"); ?>
     <!-- <section class="content">
         <h2>Oplev Sønderjylland og Sydslesvig</h2>
         <section class="grid grid-3 gap-30">
@@ -68,7 +68,7 @@
         <section class="content">
           	<section class="first">
               <article class="second">
-                <?php require_once($_SERVER["DOCUMENT_ROOT"]."/components/timetable.php");?>
+                <?php require_once($root."/components/timetable.php");?>
                 <section class="ppad ppad-10 no-flex">
                     <?php
                         createTimetable("Egernsund - Langballigau");
@@ -104,7 +104,7 @@
     <section class="info_container" id="prices">
         <div class="content">
             <section class="ticket-grid">
-                <? require_once($_SERVER["DOCUMENT_ROOT"]."/components/tickets.php");?>
+                <? require_once($root."/components/tickets.php");?>
                 <? tickets($db); ?>
             </section>
             <div class="disclaimer">
@@ -140,7 +140,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146774.47378467923!2d9.508668437412604!3d54.9143739133283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b34727dccecc71%3A0xfe70c36a6a000f79!2sCykelf%C3%A6rgen%20Flensborg%20fjord!5e0!3m2!1sen!2sdk!4v1679496942748!5m2!1sen!2sdk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="sponsore_container --top">
-        <? include($_SERVER["DOCUMENT_ROOT"]."/assets/sponsers/sponsers.php")?>
+        <? include($root."/assets/sponsers/sponsers.php")?>
     </section>
     <svg class="bgFlow" id="uuid-1e4377d2-38c0-407c-b373-e061c816eeb2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3262.82 1886.02">
         <defs>

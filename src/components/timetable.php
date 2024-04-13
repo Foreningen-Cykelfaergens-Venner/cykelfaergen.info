@@ -11,12 +11,14 @@
 		setlocale(LC_TIME, array('en_GB.UTF-8','en_GB@euro','en_GB','english'));
 	}
 
+    
     function createTimetable($route){
+        $root = $_SERVER["DOCUMENT_ROOT"]."/src";
         $fbClId = "";
         if(isset($_GET["fbclid"])){
             $fbClId = "&fbclid=" . $_GET["fbclid"];
         }
-        require($_SERVER["DOCUMENT_ROOT"]. "/db.php");
+        require($root. "/db.php");
         $currentDate = date("Y-m-d");
         $bookingLang = "&lang=da-dk";
         if(isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK" || !isset($_COOKIE["region"]) && isset($_SERVER["HTTP_HOST"]) && $_SERVER['HTTP_HOST'] !== "www.fahrradfaehre.info" && $_SERVER['HTTP_HOST'] !== "www.bicycleferry.com"){
@@ -89,7 +91,7 @@
         if($num <= 0){
             
             if($route == "Egernsund - Langballigau"){
-                include($_SERVER["DOCUMENT_ROOT"] . "/components/forening.php");
+                include($root . "/components/forening.php");
             }
 
             return;
