@@ -48,7 +48,7 @@
             <section class="invest le">
                 <section>
                     <div class="footer--title">Følg os på</div>
-                    <div class="fb-page" data-href="https://www.facebook.com/cykelfargen/" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div cite="https://www.facebook.com/cykelfargen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cykelfargen/" target="_blank" rel="noopener noreferrer"><img class="social-icon" width="40px" height="40px" src="https:///assets/icons/facebook.svg" title="Følg os på Facebook" alt="Facebook logo"></a></div></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/cykelfargen/" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div cite="https://www.facebook.com/cykelfargen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cykelfargen/" target="_blank" rel="noopener noreferrer"><img class="social-icon" width="40px" height="40px" src="/assets/icons/facebook.svg" title="Følg os på Facebook" alt="Facebook logo"></a></div></div>
                     <a href="https://www.instagram.com/cykelfaergen.flensborg.fjord/" target="_blank" rel="noopener noreferrer"><img class="social-icon" width="40px" height="40px" src="/assets/icons/instagram.svg" title="Følg os på Instagram" alt="Instagram logo"></a>
                     <div class="clear"></div>
                 </section>

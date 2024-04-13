@@ -218,7 +218,7 @@ if(isset($_GET["fbclid"])){
   <link rel="preconnect" href="https://downloads.intastellarsolutions.com">
   <link rel="preconnect" href="https://consents.cdn.intastellarsolutions.com">
   <script src="https://downloads.intastellarsolutions.com/cookieconsents/cykelfaergen.info/config.js"></script>
-  <!-- <script src="https://consents.cdn.intastellarsolutions.com/uc.js"></script> -->
+  <script src="https://consents.cdn.intastellarsolutions.com/uc.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="copyright" content="Copyright <?= date("Y") ?> Foreningen Cykelfærgen´s Venner. All rights reserved.">
