@@ -1,0 +1,22 @@
+{
+  "name": "cykelfaergen-flensborg-fjord",
+  "version": "1.0.0",
+  "description": "The official Website for Cykelfærgen Flensborg Fjord",
+  "main": "index.php",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixaschultz/cykelfaergen-flensborg-fjord.git"
+  },
+  "author": "Felix A. Schultz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixaschultz/cykelfaergen-flensborg-fjord/issues"
+  },
+  "homepage": "https://github.com/felixaschultz/cykelfaergen-flensborg-fjord#readme"
+}
