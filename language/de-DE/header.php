@@ -1,6 +1,6 @@
-<?
+<!-- <?
   $root = preg_replace('/\W\w+\s*(\W*)$/', '$1', $_SERVER["DOCUMENT_ROOT"]) . "/public_html";
-?>
+?> -->
 <!-- <?= preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"])?> -->
 <!-- TrustBox script -->
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>

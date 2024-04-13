@@ -90,9 +90,9 @@ if(http_response_code() !== 410){
   }
   
   if(isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == "https://www.fahrradfaehre.info/" || isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == "https://www.bicycleferry.com/"){
-    $mainHost = "www." . preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_REFERER"]);
+    $mainHost = preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_REFERER"]);
   }else {
-    $mainHost = "www.". preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]);
+    $mainHost = preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]);
   }
 
   /* if(is_array($access) && in_array("Denmark", $access) && !isset($_COOKIE["region"]) && $_SERVER["HTTP_HOST"] !== "www.fahrradfaehre.info" && $_SERVER['HTTP_REFERER'] !== "https://www.fahrradfaehre.info/" && !isset($_COOKIE["region"])){
@@ -584,6 +584,6 @@ if(isset($_GET["fbclid"])){
   <?php
     include($root . "/language/" . $region . "/header.php");
     if($_SERVER["HTTP_HOST"] != "booking.cykelfaergen.info"){
-      include($root . "/components/modal.php");
+      include($_SERVER["DOCUMENT_ROOT"] . "/components/modal.php");
     }
   ?>
