@@ -299,9 +299,9 @@ if(isset($_GET["fbclid"])){
     'opsz' 40
   }
   </style>
-  <script src="https://<?= $mainHost;?>/js/min/final.min.js" defer></script>
-  <script src="https://<?= $mainHost;?>/js/min/reviews.min.js" defer></script>
-  <script src="https://<?= $mainHost;?>/js/jquery.min.js"></script>
+  <script src="/js/min/final.min.js" defer></script>
+  <script src="/js/min/reviews.min.js" defer></script>
+  <script src="/js/jquery.min.js"></script>
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0127874455675391"
      crossorigin="anonymous"></script> -->
   <script type="application/ld+json">

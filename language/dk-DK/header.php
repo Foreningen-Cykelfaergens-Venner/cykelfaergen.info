@@ -22,12 +22,12 @@ window.fbAsyncInit = function() {
 <div id="fb-root"></div>
 <header class="main-header <?= $tourdefranceClass;?>">
     <section class="small-topHeader">
-      <a href="https://<?= $mainHost;?>/service/weather" class="paymentMethods weather" width="109px" height="53px">
+      <a href="<?= $mainHost;?>/service/weather" class="paymentMethods weather" width="109px" height="53px">
       </a>
       <a class="trustpilot-review" href="https://dk.trustpilot.com/evaluate/cykelfaergen.info" target="_blank">Bedøm os på <img src="https://cdn.trustpilot.net/brand-assets/1.8.0/logo-black.svg" alt="Trustpilot"></a>
       <a href="http://alsturbaade.dk" target="_blank" rel="noopener" class="operator">
         Booking via:
-        <img class="operator-logo" src="https://<?= $mainHost;?>/assets/logo/als-turbaade.png" title="Als Turbåde" alt="Als Turbåde" class="alsturbaade">
+        <img class="operator-logo" src="/assets/logo/als-turbaade.png" title="Als Turbåde" alt="Als Turbåde" class="alsturbaade">
       </a>
     </section>
     <section class="header">
@@ -38,7 +38,7 @@ window.fbAsyncInit = function() {
         <?}?> -->
         <section class="logo_container">
           <a href="https://<?= $mainHost;?>">
-            <img src="https://<?= $mainHost;?>/assets/logo/logo.svg" width="88px" height="88px" alt="Cykelfærgen´s Logo">
+            <img src="/assets/logo/logo.svg" width="88px" height="88px" alt="Cykelfærgen´s Logo">
           </a>
         </section>
       	<section class="menu_icon">
@@ -182,11 +182,11 @@ window.fbAsyncInit = function() {
           <!-- <a class="btn header-btn js-btn" href="https://forening.cykelfaergen.info/medlemsskab">Støt os</a> -->
       	</section>
         <section class="regionSelectorContainer">
-            <button class="regionSelector" title="Vælg sprog"><img src="https://<?= $mainHost;?>/assets/icons/flag-denmark.jpg" width="44px" height="44px" alt="Dansk flag"> <span class="currentRegion">Dansk</span></button>
+            <button class="regionSelector" title="Vælg sprog"><img src="/assets/icons/flag-denmark.jpg" width="44px" height="44px" alt="Dansk flag"> <span class="currentRegion">Dansk</span></button>
             <div class="regionSelector-items">
               <div class="regionSelector-items-container">
-                <a href="javascript:void(0);" rel="nofollow" data-language="en-GB" title="English"><img class="flag" width="44px" height="44px" alt="UK flag - Valg engelsk sprog" src="https://<?= $mainHost;?>/assets/icons/uk.webp"> English</a>
-                <a href="javascript:void(0);" rel="nofollow" data-language="de-DE" title="Deutsch"><img class="flag" width="44px" height="44px" alt="Tysk flag - Valg tysk sprog" src="https://<?= $mainHost;?>/assets/icons/flag-germany.jpg"> Deutsch</a>
+                <a href="javascript:void(0);" rel="nofollow" data-language="en-GB" title="English"><img class="flag" width="44px" height="44px" alt="UK flag - Valg engelsk sprog" src="/assets/icons/uk.webp"> English</a>
+                <a href="javascript:void(0);" rel="nofollow" data-language="de-DE" title="Deutsch"><img class="flag" width="44px" height="44px" alt="Tysk flag - Valg tysk sprog" src="/assets/icons/flag-germany.jpg"> Deutsch</a>
               </div>
             </div>
         </section>
@@ -205,7 +205,7 @@ window.fbAsyncInit = function() {
         <aside class="sideNavigation">
           <section class="sideMenu">
             <a href="<?= $baseUrl?>" class="forenings__logo">
-              <img src="https://<?= $mainHost;?>/assets/logo/cykelfaergens_forening__logo.svg" alt="Foreningen Cykelfærgen´s Venner">
+              <img src="<?= $mainHost;?>/assets/logo/cykelfaergens_forening__logo.svg" alt="Foreningen Cykelfærgen´s Venner">
             </a>
             <section class="menu_icon sideNavigation__menu_icon">
               <section class="menu_container">
@@ -230,7 +230,7 @@ window.fbAsyncInit = function() {
             </nav>
           </section>
         </aside>
-        <script src="https://<?= $mainHost;?>/js/forening.js"></script>
+        <script src="/js/forening.js"></script>
       <?php
         }
       ?>
