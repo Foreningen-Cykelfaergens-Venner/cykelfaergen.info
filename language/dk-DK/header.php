@@ -37,7 +37,7 @@ window.fbAsyncInit = function() {
         </a>
         <?}?> -->
         <section class="logo_container">
-          <a href="https://<?= $mainHost;?>">
+          <a href="">
             <img src="/assets/logo/logo.svg" width="88px" height="88px" alt="Cykelfærgen´s Logo">
           </a>
         </section>
@@ -113,27 +113,27 @@ window.fbAsyncInit = function() {
                       </ul>
                   </div>
                 </li>
-                <li><a href="https://<?= $mainHost;?>/#prices">Priser</a></li>
+                <li><a href="/#prices">Priser</a></li>
                 <li class="lang"><a class="lang_chooser">Special Tours <i class="arrow right-arrow"></i></a>
                   <div class="lang_container nav">
                     <ul class="">
-                      <li><a href="https://<?= $mainHost;?>/event">Event sejlads</a></li>
+                      <li><a href="/event">Event sejlads</a></li>
                     </ul>
                   </div>
                 </li>
                 <li class="lang"><span class="lang_chooser">Cykelservice & Oplev <i class="arrow right-arrow"></i></span>
                   <div class="lang_container nav">
                     <ul>
-                      <li><a href="https://<?= $mainHost;?>/service/repair-and-service-stations">Cykelservice</a></li>
-                      <li><a href="https://<?= $mainHost; ?>/service/weather">Vejrudsigt</a></li>
+                      <li><a href="/service/repair-and-service-stations">Cykelservice</a></li>
+                      <li><a href="/service/weather">Vejrudsigt</a></li>
                       <li><span class="subMenu__anchor">Oplev <i class="arrow right-arrow"></i></span>
                         <div class="subSubMenu">
                           <ul>
-                            <li><a href="https://<?= $mainHost;?>/oplev">Overnatning / Lej af cykel / Resturant og indkøb</a></li>
-                            <li><a href="https://<?= $mainHost;?>/langballigau-sonderborg-paa-en-time">Sønderborg - Langballig</a></li>
-                            <li><a href="https://<?= $mainHost;?>/attraktioner">Attraktioner</a></li>
+                            <li><a href="/oplev">Overnatning / Lej af cykel / Resturant og indkøb</a></li>
+                            <li><a href="/langballigau-sonderborg-paa-en-time">Sønderborg - Langballig</a></li>
+                            <li><a href="/attraktioner">Attraktioner</a></li>
                           </ul>
-                          <!-- <li><a href="https://<?= $mainHost;?>/discover/flensburg-fjord-route">Flensburg Fjord Route</a></li> -->
+                          <!-- <li><a href="/discover/flensburg-fjord-route">Flensburg Fjord Route</a></li> -->
                         </div>
                       </li>
                     </ul>
@@ -142,22 +142,22 @@ window.fbAsyncInit = function() {
                 <li class="lang"><span class="lang_chooser">Færger <i class="arrow right-arrow"></i></span>
                   <div class="lang_container nav">
                     <ul>
-                      <li><a href="https://<?= $mainHost;?>/ferry/rodsand">Rødsand</a></li>
-                      <li><a href="https://<?= $mainHost;?>/ferry/thjalfe">Thjalfe</a></li>
+                      <li><a href="/ferry/rodsand">Rødsand</a></li>
+                      <li><a href="/ferry/thjalfe">Thjalfe</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><a href="https://<?= $mainHost;?>/om-os/find-vej">Find vej</a></li>
+                <li><a href="/om-os/find-vej">Find vej</a></li>
                 <li class="lang"><span class="lang_chooser">Om os <i class="arrow right-arrow"></i></span>
                   <div class="lang_container nav">
                     <ul>
-                      <li><a href="https://<?= $mainHost;?>/contact">Kontakt</a></li>
-                      <li><a href="https://<?= $mainHost;?>/#faq">FAQ</a></li>
-                      <li><a href="https://<?= $mainHost;?>/#about">Om Færgen</a></li>
+                      <li><a href="/contact">Kontakt</a></li>
+                      <li><a href="/#faq">FAQ</a></li>
+                      <li><a href="/#about">Om Færgen</a></li>
                       <li><span class="subMenu__anchor">Foreningen <i class="arrow right-arrow"></i></span>
                         <div class="subSubMenu">  
                           <ul>
-                              <li><a href="https://<?= $mainHost;?>/om-os/forening/cykelfaergens-venner">Om foreningen</a></li>
+                              <li><a href="/om-os/forening/cykelfaergens-venner">Om foreningen</a></li>
                               <li><a href="https://forening.cykelfaergen.info/medlemsskab">Meld dig ind</a></li>
                             </ul>
                         </div>
