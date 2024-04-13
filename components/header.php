@@ -583,7 +583,7 @@ if(isset($_GET["fbclid"])){
   </section>
   <?php
     include($root . "/language/" . $region . "/header.php");
-    if($_SERVER["HTTP_HOST"] != "booking.cykelfaergen.info"){
+    /* if($_SERVER["HTTP_HOST"] != "booking.cykelfaergen.info"){
       include($_SERVER["DOCUMENT_ROOT"] . "/components/modal.php");
-    }
+    } */
   ?>
