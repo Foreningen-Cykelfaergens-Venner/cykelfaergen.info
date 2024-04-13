@@ -303,7 +303,7 @@
         <span class="grdin-overlay"></span>
         <section class="content">
             <h2>FAQ - Frequent Asked Questions!</h2>
-            <?
+            <?php
                 $sql = "SELECT * FROM faqs WHERE question != 'Hvordan ser coronaregler ud?'";
                 $query = mysqli_query($db, $sql);
 

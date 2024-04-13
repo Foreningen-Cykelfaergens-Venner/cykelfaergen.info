@@ -1,8 +1,8 @@
 <?php
     include("db.php");
-    if($_COOKIE["region"] == "da-DK"){
+    if(isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK"){
 		setlocale(LC_TIME, array('da_DA.UTF-8','da_DA@euro','da_DA','danish'));
-	}else if($_COOKIE["region"] == "de-DE"){
+	}else if(isset($_COOKIE["region"]) && $_COOKIE["region"] == "de-DE"){
 		setlocale(LC_TIME, array('de_DE.UTF-8','de_DE@euro','de_DE','german'));
 	}
 
@@ -101,7 +101,7 @@
             <time datetime="<?= $row["published_at"]?>" class="time"> <?= $plublished; ?></time>
         </div>
     </a>
-<?
+<?php
         }else{
 ?>
             <a href="<?= $url?>" class="news-content-link col col-block">
@@ -119,7 +119,7 @@
                     <date datetime="<?= $row["published_at"]?>" class="time"> <?= $plublished; ?></date>
                 </div>
             </a>
-<?
+<?php
         }
     }
 ?>
