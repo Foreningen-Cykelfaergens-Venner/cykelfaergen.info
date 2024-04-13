@@ -9,7 +9,7 @@ $mainHost = "www.".preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]);
 /* $img = "https://".$mainHost."/newsroom/news-img/IMG_1753-min.jpg"; */
 ?>
 <?php
-include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
+include("./components/header.php");
 ?>
 <?php
 if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK") {
