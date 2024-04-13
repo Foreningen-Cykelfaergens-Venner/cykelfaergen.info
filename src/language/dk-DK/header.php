@@ -1,7 +1,3 @@
-<?php
-  $root = preg_replace('/\W\w+\s*(\W*)$/', '$1', $_SERVER["DOCUMENT_ROOT"]) . "/public_html";
-?>
-
 <!-- Messenger Chat Plugin Code -->
 <script>
 window.fbAsyncInit = function() {
@@ -27,7 +23,7 @@ window.fbAsyncInit = function() {
       <a class="trustpilot-review" href="https://dk.trustpilot.com/evaluate/cykelfaergen.info" target="_blank">Bedøm os på <img src="https://cdn.trustpilot.net/brand-assets/1.8.0/logo-black.svg" alt="Trustpilot"></a>
       <a href="http://alsturbaade.dk" target="_blank" rel="noopener" class="operator">
         Booking via:
-        <img class="operator-logo" src="/assets/logo/als-turbaade.png" title="Als Turbåde" alt="Als Turbåde" class="alsturbaade">
+        <img class="operator-logo" src="<?php echo $root; ?>/assets/logo/als-turbaade.png" title="Als Turbåde" alt="Als Turbåde" class="alsturbaade">
       </a>
     </section>
     <section class="header">
@@ -38,7 +34,7 @@ window.fbAsyncInit = function() {
         <?}?> -->
         <section class="logo_container">
           <a href="">
-            <img src="/assets/logo/logo.svg" width="88px" height="88px" alt="Cykelfærgen´s Logo">
+            <img src="<?php echo $root; ?>/assets/logo/logo.svg" width="88px" height="88px" alt="Cykelfærgen´s Logo">
           </a>
         </section>
       	<section class="menu_icon">
@@ -182,11 +178,11 @@ window.fbAsyncInit = function() {
           <!-- <a class="btn header-btn js-btn" href="https://forening.cykelfaergen.info/medlemsskab">Støt os</a> -->
       	</section>
         <section class="regionSelectorContainer">
-            <button class="regionSelector" title="Vælg sprog"><img src="/assets/icons/flag-denmark.jpg" width="44px" height="44px" alt="Dansk flag"> <span class="currentRegion">Dansk</span></button>
+            <button class="regionSelector" title="Vælg sprog"><img src="<?php echo $root; ?>/assets/icons/flag-denmark.jpg" width="44px" height="44px" alt="Dansk flag"> <span class="currentRegion">Dansk</span></button>
             <div class="regionSelector-items">
               <div class="regionSelector-items-container">
-                <a href="javascript:void(0);" rel="nofollow" data-language="en-GB" title="English"><img class="flag" width="44px" height="44px" alt="UK flag - Valg engelsk sprog" src="/assets/icons/uk.webp"> English</a>
-                <a href="javascript:void(0);" rel="nofollow" data-language="de-DE" title="Deutsch"><img class="flag" width="44px" height="44px" alt="Tysk flag - Valg tysk sprog" src="/assets/icons/flag-germany.jpg"> Deutsch</a>
+                <a href="javascript:void(0);" rel="nofollow" data-language="en-GB" title="English"><img class="flag" width="44px" height="44px" alt="UK flag - Valg engelsk sprog" src="<?php echo $root; ?>/assets/icons/uk.webp"> English</a>
+                <a href="javascript:void(0);" rel="nofollow" data-language="de-DE" title="Deutsch"><img class="flag" width="44px" height="44px" alt="Tysk flag - Valg tysk sprog" src="<?php echo $root; ?>/assets/icons/flag-germany.jpg"> Deutsch</a>
               </div>
             </div>
         </section>

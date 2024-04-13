@@ -1,7 +1,7 @@
 <?php
 /* $root = preg_replace('/\W\w+\s*(\W*)$/', '$1', $_SERVER["DOCUMENT_ROOT"]) . "/public_html"; */
-$root = $_SERVER["DOCUMENT_ROOT"];
-
+$root = "./src";
+include($root . "/db.php");
 if (isset($_GET["page_id"]) || strpos($_SERVER["HTTP_HOST"], "de.") > -1 || strpos($_SERVER["HTTP_HOST"], "uk.") > -1) {
   header("HTTP/1.1 410 Gone");
   $_GET['error'] = "410";
@@ -151,8 +151,6 @@ if(strpos($_SERVER["REQUEST_URI"], "tourdebrunsnaes") !== false){
   $tourdefrance = "";
 }
 $price = "100,00";
-
-include($root . "/db.php");
 $tysk = "";
 
 if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK") {
@@ -249,16 +247,16 @@ if(isset($_GET["fbclid"])){
   <meta name="facebook-domain-verification" content="ly0ck4yypwbkrqpu0sxs041hkk3n4f" />
   <title><?= $title ?></title>
   <meta name="description" content="<?= $description ?>">
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/slider.css">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/reset.css">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/style.css">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/slider.css">
   <?= $tourdefrance;?>
   <?php if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") !== false || strpos($_SERVER["HTTP_HOST"], "forening.cykelfaergen.info") !== false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) { ?>
     <link rel="stylesheet" href="/styles/forening.css">
   <?php } ?>
   <?= $style; ?>
-  <link rel="stylesheet" href="/styles/pressroom.css">
-  <link rel="stylesheet" href="/styles/mobile.css">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/pressroom.css">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/mobile.css">
   <link rel="alternate" hreflang="x-default" href="https://www.cykelfaergen.info<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="de-de" href="https://www.fahrradfaere.info<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="de-at" href="https://www.fahrradfaere.info<?= $_SERVER["REQUEST_URI"]; ?>">
@@ -271,24 +269,24 @@ if(isset($_GET["fbclid"])){
   <link rel="alternate" hreflang="en-au" href="https://www.bicycleferry.com<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="en-ca" href="https://www.bicycleferry.com<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="en-in" href="https://www.bicycleferry.com<?= $_SERVER["REQUEST_URI"]; ?>">
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $root; ?>/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="<?php echo $root; ?>/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $root; ?>/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $root; ?>/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $root; ?>/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="<?php echo $root; ?>/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $root; ?>/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $root; ?>/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $root; ?>/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $root; ?>/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $root; ?>/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $root; ?>/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $root; ?>/assets/icons/favicon-16x16.png">
   <link rel="canonical" href="https://<?= $_SERVER["HTTP_HOST"];?><?= $_SERVER["REQUEST_URI"]; ?>">
-  <link rel="stylesheet" href="/styles/fonts/Material-Icons.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="/styles/fonts/Roboto.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="/styles/fonts/Bellefair.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="/styles/fonts/Raleway.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/fonts/Material-Icons.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/fonts/Roboto.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/fonts/Bellefair.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="<?php echo $root; ?>/styles/fonts/Raleway.css?v=1.<?= time();?>">
   <script src="https://kit.fontawesome.com/bf8a30ff13.js" crossorigin="anonymous"></script>
   <style>
   .material-symbols-outlined {
@@ -299,9 +297,9 @@ if(isset($_GET["fbclid"])){
     'opsz' 40
   }
   </style>
-  <script src="/js/min/final.min.js" defer></script>
-  <script src="/js/min/reviews.min.js" defer></script>
-  <script src="/js/jquery.min.js"></script>
+  <script src="<?php echo $root; ?>/js/min/final.min.js" defer></script>
+  <script src="<?php echo $root; ?>/js/min/reviews.min.js" defer></script>
+  <script src="<?php echo $root; ?>/js/jquery.min.js"></script>
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0127874455675391"
      crossorigin="anonymous"></script> -->
   <script type="application/ld+json">
