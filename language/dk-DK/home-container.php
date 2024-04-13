@@ -308,11 +308,9 @@
                 $query = mysqli_query($db, $sql);
 
                 while($row = $query->fetch_assoc()){
-                    $question = mb_convert_encoding($row["question"], 'UTF-8', 'HTML-ENTITIES');
-		            $question = mb_convert_encoding($question, "HTML-ENTITIES", "UTF-8");
+                    $question = htmlspecialchars($row["question"]);
 
-                    $answer = mb_convert_encoding($row["answer"], 'UTF-8', 'HTML-ENTITIES');
-		            $answer = mb_convert_encoding($answer, "HTML-ENTITIES", "UTF-8");
+                    $answer = htmlspecialchars($row["answer"]);
                     echo '<article>
                             <div class="accordion"><span class="arrow arrowDown"></span> '.$question.'</div>
                             <div class="panel">
