@@ -106,7 +106,7 @@ window.fbAsyncInit = function() {
                                 $via = " - ";
                             }
                             echo '
-                            <li><a href="https://'. $mainHost .'/#'. str_replace("-", "",str_replace(" ", "",$route)) .'">'. explode("-",mb_convert_encoding($route, "utf-8", "HTML-ENTITIES"))[0]. $via . explode("-",mb_convert_encoding($route, "utf-8", "HTML-ENTITIES"))[1] .'</a></li>
+                            <li><a href="/#'. str_replace("-", "",str_replace(" ", "",$route)) .'">'. explode("-",mb_convert_encoding($route, "utf-8", "HTML-ENTITIES"))[0]. $via . explode("-",mb_convert_encoding($route, "utf-8", "HTML-ENTITIES"))[1] .'</a></li>
                             ';
                           }
                         ?>
