@@ -260,7 +260,7 @@
                     "value": <?php echo $priceNormal;?>,
                     "currency": "<?php echo $valuta2 ?>"
                 })'><?php echo $ctaText?></a>
-            <?
+            <?php
             echo "</section>";
             echo "</section>";
             echo '</article>';

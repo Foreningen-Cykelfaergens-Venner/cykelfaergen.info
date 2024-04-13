@@ -1,6 +1,6 @@
 <?php
-$root = preg_replace('/\W\w+\s*(\W*)$/', '$1', $_SERVER["DOCUMENT_ROOT"]) . "/public_html";
-
+/* $root = preg_replace('/\W\w+\s*(\W*)$/', '$1', $_SERVER["DOCUMENT_ROOT"]) . "/public_html"; */
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 if (isset($_GET["page_id"]) || strpos($_SERVER["HTTP_HOST"], "de.") > -1 || strpos($_SERVER["HTTP_HOST"], "uk.") > -1) {
   header("HTTP/1.1 410 Gone");
@@ -117,6 +117,8 @@ if(http_response_code() !== 410){
 
 }
 
+$img = "https://".$mainHost."/assets/og_images/cykelfærgen-og-main.jpg";
+
 if (strpos($_SERVER["REQUEST_URI"], "pressroom") !== false) {
   $img = "https://".$mainHost."/newsroom/news-img/" . $newsBanner ."?v=". time();
 } else if (strpos($_SERVER["REQUEST_URI"], "stoet-os") !== false || strpos($_SERVER["HTTP_HOST"], "forening.cykelfaergen.info") !== false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) {
@@ -216,7 +218,7 @@ if(isset($_GET["fbclid"])){
   <link rel="preconnect" href="https://downloads.intastellarsolutions.com">
   <link rel="preconnect" href="https://consents.cdn.intastellarsolutions.com">
   <script src="https://downloads.intastellarsolutions.com/cookieconsents/cykelfaergen.info/config.js"></script>
-  <script src="https://consents.cdn.intastellarsolutions.com/uc.js"></script>
+  <!-- <script src="https://consents.cdn.intastellarsolutions.com/uc.js"></script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="copyright" content="Copyright <?= date("Y") ?> Foreningen Cykelfærgen´s Venner. All rights reserved.">
@@ -247,16 +249,16 @@ if(isset($_GET["fbclid"])){
   <meta name="facebook-domain-verification" content="ly0ck4yypwbkrqpu0sxs041hkk3n4f" />
   <title><?= $title ?></title>
   <meta name="description" content="<?= $description ?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/reset.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/style.css?v=1.<?= time();?>">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/slider.css?v=1.<?= time();?>">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/slider.css">
   <?= $tourdefrance;?>
-  <? if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") !== false || strpos($_SERVER["HTTP_HOST"], "forening.cykelfaergen.info") !== false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) { ?>
-    <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/forening.css?v=1.<?= time(); ?>">
-  <? } ?>
+  <?php if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") !== false || strpos($_SERVER["HTTP_HOST"], "forening.cykelfaergen.info") !== false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) { ?>
+    <link rel="stylesheet" href="/styles/forening.css">
+  <?php } ?>
   <?= $style; ?>
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/pressroom.css">
-  <link rel="stylesheet" href="https://<?= $mainHost;?>/styles/mobile.css">
+  <link rel="stylesheet" href="/styles/pressroom.css">
+  <link rel="stylesheet" href="/styles/mobile.css">
   <link rel="alternate" hreflang="x-default" href="https://www.cykelfaergen.info<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="de-de" href="https://www.fahrradfaere.info<?= $_SERVER["REQUEST_URI"]; ?>">
   <link rel="alternate" hreflang="de-at" href="https://www.fahrradfaere.info<?= $_SERVER["REQUEST_URI"]; ?>">
@@ -316,7 +318,7 @@ if(isset($_GET["fbclid"])){
         "contentUrl": "https://<?php echo $mainHost; ?>/assets/vid/cykelfaergen-reklame<?php echo $tysk; ?>.mp4"
       }
     </script>
-  <? if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") !== false) { ?>
+  <?php if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") !== false) { ?>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -337,7 +339,7 @@ if(isset($_GET["fbclid"])){
         }
       }
     </script>
-  <? } ?>
+  <?php } ?>
   <!-- Clarity tracking code for https://www.cykelfaergen.info/ -->
   <script type="text/plain">
     (function(c, l, a, r, i, t, y) {
@@ -368,7 +370,7 @@ if(isset($_GET["fbclid"])){
   <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4974826&fmt=gif" />
   </noscript>
-  <? if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") === false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) { ?>
+  <?php if (strpos($_SERVER["REQUEST_URI"], "om-os/forening") === false || strpos($_SERVER["HTTP_HOST"], "verein.cykelfaergen.info") !== false) { ?>
     <script type="text/javascript">
         window.omnisend = window.omnisend || [];
         omnisend.push(["accountID", "644e2f87bc57b9e241620fa1"]);
@@ -376,7 +378,7 @@ if(isset($_GET["fbclid"])){
         !function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://omnisnippet1.com/inshop/launcher-v2.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}();
     </script>
 
-  <? } ?>
+  <?php } ?>
   <!-- Google Tag Manager -->
   <!-- Google Tag Manager -->
   <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -466,7 +468,7 @@ if(isset($_GET["fbclid"])){
       "foundingLocation": "Brunsnæs, Denmark"
     }
   </script>
-  <? if ($_SERVER["REQUEST_URI"] == "/") { ?>
+  <?php if ($_SERVER["REQUEST_URI"] == "/") { ?>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -533,7 +535,7 @@ if(isset($_GET["fbclid"])){
       }
     </script>
 
-  <? }
+  <?php }
   if (strpos($_SERVER["REQUEST_URI"], "pressroom") !== false) { ?>
     <script type="application/ld+json">
       {
@@ -567,7 +569,7 @@ if(isset($_GET["fbclid"])){
         }
       }
     </script>
-  <? } ?>
+  <?php } ?>
 </head>
 
 <body>
@@ -577,11 +579,11 @@ if(isset($_GET["fbclid"])){
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 <!-- End Google Tag Manager (noscript) -->
   <section class="test">
-    <? include($root. "/functions/info.php");?>
+    <?php include($root. "/functions/info.php");?>
   </section>
-  <?
-  include($root . "/language/" . $region . "/header.php");
-  if($_SERVER["HTTP_HOST"] != "booking.cykelfaergen.info"){
-    include($root . "/components/modal.php");
-  }
+  <?php
+    include($root . "/language/" . $region . "/header.php");
+    if($_SERVER["HTTP_HOST"] != "booking.cykelfaergen.info"){
+      include($root . "/components/modal.php");
+    }
   ?>

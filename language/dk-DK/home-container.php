@@ -68,7 +68,7 @@
         <section class="content">
           	<section class="first">
               <article class="second">
-                <? require_once($_SERVER["DOCUMENT_ROOT"]."/components/timetable.php");?>
+                <?php require_once($_SERVER["DOCUMENT_ROOT"]."/components/timetable.php");?>
                 <section class="ppad ppad-10 no-flex">
                     <?php
                         createTimetable("Egernsund - Langballigau");
@@ -234,47 +234,49 @@
         }else if(strtolower($category) == "pressemeddelelse"){
             $style = "blue";
         }
+            $plain = mb_convert_encoding($plain, "HTML-ENTITIES", "UTF-8");
+            $main_title = mb_convert_encoding($main_title, "HTML-ENTITIES", "UTF-8");
+            $plublishedAt = $row["published_at"];
         if($row_num >= "3"){
-            
-            
-?>
-    <a href="<?= $url?>" class="news-content-link col col-block <? echo $col[$i]; ?>">
-        <div class="news-content-front <? echo $c[$i];?>">
-            <div class="news-header-front <? echo $co[$i];?>"><img src="/newsroom/news-img/<?= $img; ?>" loading="lazy" class="news-img" alt="<?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>"></div>
-            <div class="news-c">
-                <div class="cate"><span class="cat-span" style="color: <?= $style;?>"><?= $category; ?></span></div>
-                <div class="title">
-                    <?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>
-                </div>
-                <div style="white-space: initial; padding-top: 35px;">
-                    <?= mb_convert_encoding($plain , 'HTML-ENTITIES', "UTF-8");?>
-                </div>
-            </div>
-            <time datetime="<?= $row["published_at"]?>" class="time"> <?= $plublished; ?></time>
-        </div>
-    </a>
-<?
-        }else{
-?>
-            <a href="<?= $url?>" class="news-content-link col col-block">
-                <div class="news-content-front">
-                    <div class="news-header-front"><img src="/newsroom/news-img/<?= $img; ?>" loading="lazy" class="news-img" alt="<?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>"></div>
+        <<<EOD
+            <a href="$url" class="news-content-link col col-block $col[$i] ">
+                <div class="news-content-front $c[$i]">
+                    <div class="news-header-front $co[$i]"><img src="/newsroom/news-img/$img;" loading="lazy" class="news-img" alt="<?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>"></div>
                     <div class="news-c">
-                        <div class="cate"><span class="cat-span"><?= $category; ?></span></div>
+                        <div class="cate"><span class="cat-span" style="color: $style;">$category;</span></div>
                         <div class="title">
-                            <?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>
+                            $main_title
                         </div>
                         <div style="white-space: initial; padding-top: 35px;">
-                            <?= mb_convert_encoding($plain , 'HTML-ENTITIES', "UTF-8");?>
+                            $plain
                         </div>
                     </div>
-                    <time datetime="<?= $row["published_at"]?>" class="time"> <?= $plublished; ?></time>
+                    <time datetime="$plublishedAt" class="time"> $plublished; ?></time>
                 </div>
             </a>
-<?
-        }
-    }
-?>
+            EOD;
+                }else{
+                <<<EOD
+                    <a href="$url" class="news-content-link col col-block">
+                        <div class="news-content-front">
+                            <div class="news-header-front"><img src="/newsroom/news-img/$img" loading="lazy" class="news-img" alt="<?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>"></div>
+                            <div class="news-c">
+                                <div class="cate"><span class="cat-span">$category</span></div>
+                                <div class="title">
+                                    $main_title
+                                </div>
+                                <div style="white-space: initial; padding-top: 35px;">
+                                    $plain
+                                </div>
+                            </div>
+                            <time datetime="$plublishedAt" class="time"> $plublished</time>
+                        </div>
+                    </a>
+                    EOD;
+                }
+            }
+        ?>
+                </div>
               	</div>
             </div>
         </div>

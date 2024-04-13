@@ -1,8 +1,9 @@
 <?php
+    /* include("../db.php"); */
     if(!isset($_COOKIE["region"])){
-        if($_SERVER["HTTP_HOST"] == "www.fahrradfaehre.info" || $_SERVER['HTTP_REFERER'] == "https://www.fahrradfaehre.info/"){
+        if($_SERVER["HTTP_HOST"] == "www.fahrradfaehre.info" || isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == "https://www.fahrradfaehre.info/"){
           $lang = "de-DE";
-        }else if($_SERVER["HTTP_HOST"] == "www.bicycleferry.com" || $_SERVER['HTTP_REFERER'] == "https://www.bicycleferry.com/"){
+        }else if($_SERVER["HTTP_HOST"] == "www.bicycleferry.com" || isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == "https://www.bicycleferry.com/"){
             $lang = "en-GB";
         }else{
           $lang = "da-DK";
@@ -66,12 +67,10 @@
 ?>
 <article class="services-banner" style="<?php if(empty($serviceMessage)){ echo "display: none;";}?>width: 100%; min-height: 70px; max-height: 350px; box-sizing: border-box; height: auto; display:flex; flex-direction:column; justify-content:center;align-items:center;background:rgb(4, 108, 109);color:#ffffff;top:0;left:0;z-index:1;">
     <section class="services-banner-content service-messages">
-        <?
+        <?php
         if(is_array($serviceMessage)){
             foreach($serviceMessage as $key){
-        ?>
-            <div class="service-article service-message"><?= $key;?></div>
-        <?
+                echo "<div class='service-message'>".$key."</div>";
             }
         }
         ?>
@@ -134,4 +133,3 @@
         }
     }
 </style>
-<!-- <?php require($root."/functions/warnings.php")?> -->

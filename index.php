@@ -1,4 +1,4 @@
-<?
+<?php
 /* ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); */
@@ -8,10 +8,10 @@ session_start();
 $mainHost = "www.".preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]);
 /* $img = "https://".$mainHost."/newsroom/news-img/IMG_1753-min.jpg"; */
 ?>
-<?
+<?php
 include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
 ?>
-<?
+<?php
 if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK") {
     if(new DateTime() <= new DateTime("2023-10-31 23:59:59", new DateTimeZone("Europe/Copenhagen"))){
         include("language/dk-DK/foreningen-banner.php");
@@ -44,131 +44,3 @@ if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK") {
 include($_SERVER["DOCUMENT_ROOT"] . "/scripts/script.php");
 include($_SERVER["DOCUMENT_ROOT"] . "/components/footer.php");
 ?>
-<!-- <script>
-    {
-      "event": "add_to_cart",
-      "value": 100,
-      "currency": "DKK",
-      "event_category": "Cykelfærgen - Bookig",
-      "coupon": "",
-      "payment_type": "",
-      "affiliation": "Team Booking",
-      'ecommerce': {
-        "items": [
-          {
-            "item_id": "",
-            "item_name": "",
-            "price": "",
-            "item_brand": "Cykelfærgen Flensborg Fjord",
-            "item_category": "Rute Sejlads",
-            "item_category2": "[Hvilken Rute f.eks. Egernsund-Langballig]",
-            "coupon": "",
-            "discount": "",
-            "quanity": "",
-            "item_variant": "[Cykel type]"
-          }
-        ]
-      }
-    },
-    {
-      "event": "view_item",
-      "value": 100,
-      "currency": "DKK",
-      "event_category": "Cykelfærgen - Bookig",
-      "coupon": "",
-      "payment_type": "",
-      "affiliation": "Team Booking",
-      'ecommerce': {
-        "items": [
-          {
-            "item_id": "",
-            "item_name": "",
-            "price": "",
-            "item_brand": "Cykelfærgen Flensborg Fjord",
-            "item_category": "Rute Sejlads",
-            "item_category2": "[Hvilken Rute f.eks. Egernsund-Langballig]",
-            "coupon": "",
-            "discount": "",
-            "quanity": "",
-            "item_variant": "[Cykel type]"
-          }
-        ]
-      }
-    },
-    {
-      "event": "begin_checkout",
-      "value": 100,
-      "currency": "DKK",
-      "event_category": "Cykelfærgen - Bookig",
-      "coupon": "",
-      "payment_type": "",
-      "affiliation": "Team Booking",
-      'ecommerce': {
-        "items": [
-          {
-            "item_id": "",
-            "item_name": "",
-            "price": "",
-            "item_brand": "Cykelfærgen Flensborg Fjord",
-            "item_category": "Rute Sejlads",
-            "item_category2": "[Hvilken Rute f.eks. Egernsund-Langballig]",
-            "coupon": "",
-            "discount": "",
-            "quanity": "",
-            "item_variant": "[Cykel type]"
-          }
-        ]
-      }
-    },
-    {
-      "event": "add_shipping_info",
-      "value": 100,
-      "currency": "DKK",
-      "event_category": "Cykelfærgen - Bookig",
-      "coupon": "",
-      "payment_type": "",
-      "affiliation": "Team Booking",
-      'ecommerce': {
-        "items": [
-          {
-            "item_id": "",
-            "item_name": "",
-            "price": "",
-            "item_brand": "Cykelfærgen Flensborg Fjord",
-            "item_category": "Rute Sejlads",
-            "item_category2": "[Hvilken Rute f.eks. Egernsund-Langballig]",
-            "coupon": "",
-            "discount": "",
-            "quanity": "",
-            "item_variant": "[Cykel type]"
-          }
-        ]
-      }
-    },
-    {
-      "event": "refund",
-      "transaction_id": "",
-      "value": 100,
-      "currency": "DKK",
-      "event_category": "Cykelfærgen - Bookig",
-      "coupon": "",
-      "payment_type": "",
-      "affiliation": "Team Booking",
-      'ecommerce': {
-        "items": [
-          {
-            "item_id": "",
-            "item_name": "",
-            "price": "",
-            "item_brand": "Cykelfærgen Flensborg Fjord",
-            "item_category": "Rute Sejlads",
-            "item_category2": "[Hvilken Rute f.eks. Egernsund-Langballig]",
-            "coupon": "",
-            "discount": "",
-            "quanity": "",
-            "item_variant": "[Cykel type]"
-          }
-        ]
-      }
-    }
-</script> -->

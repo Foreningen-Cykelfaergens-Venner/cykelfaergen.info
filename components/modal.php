@@ -22,7 +22,7 @@
                         <span></span>
                     </div>
                 </section>
-                <?
+                <?php
                     }
                 ?>
                 <section>
@@ -47,7 +47,7 @@
                     </section>
                 </section>
             </div>
-        <?
+        <?php
             } else if(!isset($_COOKIE["region"]) || $_COOKIE["region"] == "de-DE"){
         ?>
             <div class="grid">
@@ -84,7 +84,7 @@
                     </section>
                 </section>
             </div>
-        <?
+        <?php
             } else if(!isset($_COOKIE["region"]) || $_COOKIE["region"] == "en-GB"){
         ?>
             <div class="grid">
@@ -120,7 +120,7 @@
                     </section>
                 </section>
             </div>
-        <?
+        <?php
             }
         ?>
     </form>

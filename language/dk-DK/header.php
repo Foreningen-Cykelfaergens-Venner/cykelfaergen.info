@@ -193,7 +193,7 @@ window.fbAsyncInit = function() {
         <div style="clear:both;"></div>
       </section>
       <div style="clear:both;"></div>
-      <?
+      <?php
         if(strpos($_SERVER["REQUEST_URI"], "forening") !== false && strpos($_SERVER["REQUEST_URI"], "om-os") !== false || strpos($_SERVER["HTTP_HOST"], "forening.cykelfaergen.info") !== false){
           if(strpos($_SERVER["HTTP_HOST"], "forening") !== false){
             $host = str_replace("forening", "www", $_SERVER["HTTP_HOST"]);
@@ -231,7 +231,7 @@ window.fbAsyncInit = function() {
           </section>
         </aside>
         <script src="https://<?= $mainHost;?>/js/forening.js"></script>
-      <?
+      <?php
         }
       ?>
       <!-- <? if(strpos($_SERVER["REQUEST_URI"], "tourdebrunsnaes") !== false){?>
