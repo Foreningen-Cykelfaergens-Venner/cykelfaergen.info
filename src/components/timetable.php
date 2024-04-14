@@ -97,7 +97,7 @@
             return;
         }
         echo '
-        <section class="bg" style="background-image: url(/assets/dji_fly_20230225_121352_579_1677777125170_photo_optimized.JPG), linear-gradient(to right, #046c6d, rgba(0,0,0, 0)), linear-gradient(to left, #fff, transparent); background-size: cover; width: 100%; color: #fff; background-blend-mode: screen; background-position: center; padding: 0 15px;">
+        <section class="bg" style="background-image: url('.$root.'/assets/dji_fly_20230225_121352_579_1677777125170_photo_optimized.JPG), linear-gradient(to right, #046c6d, rgba(0,0,0, 0)), linear-gradient(to left, #fff, transparent); background-size: cover; width: 100%; color: #fff; background-blend-mode: screen; background-position: center; padding: 0 15px;">
             <h2 class="timetable-heading">'. $title .'</h2>
         </section>
         ';
