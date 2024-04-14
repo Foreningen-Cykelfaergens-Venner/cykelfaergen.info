@@ -159,7 +159,7 @@
             <div class="press_container">
             	<div class="l_news-c up">
                 <?php
-    include("db.php");
+    include($root . "/db.php");
     if(isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK" || !isset($_COOKIE["region"])){
 		setlocale(LC_TIME, array('da_DA.UTF-8','da_DA@euro','da_DA','danish'));
 	}else if($_COOKIE["region"] == "de-DE"){
@@ -364,6 +364,6 @@
     <!-- <section class="disclamer content">
         <sup>1) Du bliver sendt til MobilePay hvor efter du kan med det sammen betale kontigentet på 100 kr. til Foreningen.</sup>
     </section> -->
-    <img class="fullwidth-img" src="/assets/gendarmstien/IMG_1327.jpg" alt="Happy people enjoying a ferry ride" srcset="/assets/gendarmstien/IMG_1327-480w.jpg 480w, /assets/gendarmstien/IMG_1327-800w.jpg 800w, /assets/gendarmstien/IMG_1327.jpg 1200w">
-    <?php include("./components/trustpilot-integration.php"); ?>
+    <img class="fullwidth-img" src="<?php echo $root; ?>/assets/gendarmstien/IMG_1327.jpg" alt="Happy people enjoying a ferry ride" srcset="<?php echo $root; ?>/assets/gendarmstien/IMG_1327-480w.jpg 480w, <?php echo $root; ?>/assets/gendarmstien/IMG_1327-800w.jpg 800w, <?php echo $root; ?>/assets/gendarmstien/IMG_1327.jpg 1200w">
+    <?php include($root."/components/trustpilot-integration.php"); ?>
 </main>

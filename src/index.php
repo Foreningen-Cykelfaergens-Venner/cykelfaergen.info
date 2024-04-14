@@ -36,6 +36,6 @@ if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK") {
     include("language/dk-DK/home-container.php");
     $link = "https://www.booksonderjylland.dk/da/bok/aktivitet/1776117/ta-med-p%c3%a5-en-uforglemmelig-sejltur-med-cykelf%c3%a6rgen-r%c3%b8dsand/showdetails";
 }
-include($_SERVER["DOCUMENT_ROOT"] . "/scripts/script.php");
-include($_SERVER["DOCUMENT_ROOT"] . "/components/footer.php");
+include($root . "/scripts/script.php");
+include($root . "/components/footer.php");
 ?>

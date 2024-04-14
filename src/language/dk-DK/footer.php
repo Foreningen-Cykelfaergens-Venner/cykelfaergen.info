@@ -1,7 +1,7 @@
 <footer class="footer <?= $tourdefrance;?>">
     <section class="footer_nav ppad">
         <div class="footer_logo">
-            <img src="/assets/logo/logo.svg" width="256px" height="256px" alt="Cykelfærgen Logo">
+            <img src="<?php echo $root; ?>/assets/logo/logo.svg" width="256px" height="256px" alt="Cykelfærgen Logo">
         </div>
         <section class="navigation-status">
             <address class="ino le">
@@ -23,10 +23,10 @@
             <section class="invest le">
                 <div class="footer--title">Om os</div>
                 <ul>
-                    <li><a href="https:///om-os/find-vej">Find vej!</a></li>
-                    <li><a href="https:///pressroom">Presserum</a></li>
-                    <li><a href="https:///om-os/forening/cykelfaergens-venner">Foreningen Cykelfærgen's Venner</a></a>
-                    <li><a href="https:///om-os/vores-historie">Vores Historie</a></li>
+                    <li><a href="/om-os/find-vej">Find vej!</a></li>
+                    <li><a href="/pressroom">Presserum</a></li>
+                    <li><a href="/om-os/forening/cykelfaergens-venner">Foreningen Cykelfærgen's Venner</a></a>
+                    <li><a href="/om-os/vores-historie">Vores Historie</a></li>
                     <li><a href="https://press.cykelfaergen.info">Presse Materiale</a></li>
                     <li><a href="/contact">Kontakt os</a></li>
                 </ul>
