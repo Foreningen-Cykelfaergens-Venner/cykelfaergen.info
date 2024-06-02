@@ -138,7 +138,7 @@ if (!isset($_COOKIE["region"]) && $_SERVER["HTTP_HOST"] == "www.fahrradfaehre.in
     $lang = "da-DK";
 }
 
-$img = "https://" . $_SERVER["HTTP_HOST"] . "/images/discover/Copright Dagmar Trepins.jpg";
+$img = "https://" . $_SERVER["HTTP_HOST"] . "https://www.cykelfaergen.info/images/discover/Copright Dagmar Trepins.jpg";
 
 ?>
 <?
@@ -151,7 +151,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
     }
 </style>
 <main class="container">
-    <? include($_SERVER["DOCUMENT_ROOT"] . "/language/".$region."/flensborg-fjord.php"); ?>
+    <? include($_SERVER["DOCUMENT_ROOT"] . "/language/" . $region . "/flensborg-fjord.php"); ?>
 </main>
-<? include($_SERVER["DOCUMENT_ROOT"] . "/language/".$region."/footer.php");?>
-<? include($_SERVER["DOCUMENT_ROOT"]."/scripts/script.php");?>
+<? include($_SERVER["DOCUMENT_ROOT"] . "/language/" . $region . "/footer.php"); ?>
+<? include($_SERVER["DOCUMENT_ROOT"] . "/scripts/script.php"); ?>

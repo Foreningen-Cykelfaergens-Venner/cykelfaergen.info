@@ -5,7 +5,7 @@
             <p>Flensburg Fjord Route er en naturskøn cykelrute tværs gennem det østlige Grænseland. Ruten går igennem flere større byer, så som Aabenraa, Sønderborg og Flensburg.</p>
         </section>
         <section class="about__imageContainer">
-            <img class="overlap-bottom aboutSmallImages" src="/images/personen-about/fähre-auf-der-flensburger-foerde-entlang-der-kueste.jpg" alt="Fähre auf der Flensburger Förde mit Personen">
+            <img class="overlap-bottom aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/fähre-auf-der-flensburger-foerde-entlang-der-kueste.jpg" alt="Fähre auf der Flensburger Förde mit Personen">
         </section>
     </section>
 </section>
@@ -13,7 +13,7 @@
     <section class="about__bg split-tout--padding-top">
         <section class="grid content Tpadding">
             <section class="about__imageContainer reverse">
-                <img class="overlap-bottom aboutSmallImages" src="/images/personen-about/dannebrog-hinter-der-ms-roedsand-im-winde.jpg" alt="Dannebrog hinter der Fähre im Winde">
+                <img class="overlap-bottom aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/dannebrog-hinter-der-ms-roedsand-im-winde.jpg" alt="Dannebrog hinter der Fähre im Winde">
             </section>
             <section class="about-content">
                 <h2 class="about-heading">Highlights på <span class="rare-script">ruten:</span></h2>
@@ -30,14 +30,14 @@
             <p>Her finder du en trappe med vilde, hjemmehørende planter ved den historiske Genforeningspark ved Folkehjem.</p>
         </section>
         <section class="about__imageContainer">
-            <img class="aboutSmallImages" src="/images/personen-about/ms-roedsand-faehre-auf-dem-weg-nach-langballig.jpg" alt="Die Fähre Rødsand auf dem weg nach Brunsnæs">
+            <img class="aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/ms-roedsand-faehre-auf-dem-weg-nach-langballig.jpg" alt="Die Fähre Rødsand auf dem weg nach Brunsnæs">
         </section>
     </section>
 </section> -->
 <section class="split-tout--padding-top">
     <section class="grid grid-gap content Tpadding">
         <section class="about__imageContainer">
-            <img class="aboutSmallImages" src="/images/personen-about/ms-roedsand-faehre-auf-dem-weg-nach-langballig.jpg" alt="Die Fähre Rødsand auf dem weg nach Brunsnæs">
+            <img class="aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/ms-roedsand-faehre-auf-dem-weg-nach-langballig.jpg" alt="Die Fähre Rødsand auf dem weg nach Brunsnæs">
         </section>
         <section class="about-content">
             <h2 class="about-heading"><span class="rare-script">Gråsten</span></h2>

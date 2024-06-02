@@ -28,7 +28,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
                 <p>Sie sind auf einer schönen Wandertur in Langballig oder machen gerade einen schönen Camping ausflug auf einem der vielen Campingplätze langs der Ostsee? Dann machen Sie doch mal einen halt in Langballig am Hafen und kommen Sie mit an Bord, unserer schönen kleinen Fähre. Wir haben Platz für Sie aber auch für ihr Fahrrad.</p>
             </section>
             <section class="about__imageContainer">
-                <img class="overlap-bottom aboutSmallImages" src="/images/personen-about/personen_Artboard 1_1.jpg" alt="">
+                <img class="overlap-bottom aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/personen_Artboard 1_1.jpg" alt="">
             </section>
         </section>
     </section>
@@ -36,7 +36,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
         <section class="about__bg split-tout--padding-top">
             <section class="grid content Tpadding">
                 <section class="about__imageContainer reverse">
-                    <img class="overlap-bottom aboutSmallImages" src="/images/personen-about/personen_Artboard 1_2.jpg" alt="">
+                    <img class="overlap-bottom aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/personen_Artboard 1_2.jpg" alt="">
                 </section>
                 <section class="about-content">
                     <p>Sprechen Sie Dänisch? Taler de tysk?</p>
@@ -55,7 +55,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
                 <p></p>
             </section>
             <section class="about__imageContainer">
-                <img class="aboutSmallImages" src="/images/personen-about/personen_Artboard 1_3.jpg" alt="">
+                <img class="aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/personen_Artboard 1_3.jpg" alt="">
             </section>
         </section>
     </section>
@@ -63,7 +63,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
         <section class="about__bg">
             <section class="grid content Tpadding">
                 <section class="about__imageContainer">
-                    <img class="overlap-top aboutSmallImages" src="/images/personen-about/personen_Artboard 1_4.jpg" alt="">
+                    <img class="overlap-top aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/personen_Artboard 1_4.jpg" alt="">
                 </section>
                 <section class="about-content" style="display: flex; flex-direction: column; justify-content: center;">
                     <h2 class="about-heading">Von Langballig zum Ziegeleimuseum <span class="rare-script">Cathrines Minde!</span></h2>

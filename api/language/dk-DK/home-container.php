@@ -2,11 +2,18 @@
 <main class="container">
     <svg class="bgFlow" id="uuid-1e4377d2-38c0-407c-b373-e061c816eeb2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3262.82 1886.02">
         <defs>
-            <style>.uuid-8a559af5-71f7-42b9-a491-37a65dc99d98{fill:none;stroke:#056c6d;stroke-miterlimit:10;stroke-width:7px;}</style>
+            <style>
+                .uuid-8a559af5-71f7-42b9-a491-37a65dc99d98 {
+                    fill: none;
+                    stroke: #056c6d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 7px;
+                }
+            </style>
         </defs>
-        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07"/>
+        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07" />
     </svg>
-    <?php include($root."/components/trustpilot-integration.php"); ?>
+    <?php include($root . "/components/trustpilot-integration.php"); ?>
     <!-- <section class="content">
         <h2>Oplev Sønderjylland og Sydslesvig</h2>
         <section class="grid grid-3 gap-30">
@@ -29,7 +36,7 @@
                 </section>
             </a>
             <a href="https://www.schloss-gluecksburg.de/dk/slottet/schloss-gluecksburgs-bygherre" target="_blank" class="dis-item">
-                <img src="https://d2wgp4u47gi6he.cloudfront.net/imagecache/images/articles/4194_Fill_920_0.jpg" alt="Glücksburg Slot">
+                <img src="https://d2wgp4u47gi6he.cloudfront.net/imagecachehttps://www.cykelfaergen.info/images/articles/4194_Fill_920_0.jpg" alt="Glücksburg Slot">
                 <section class="dis-item__content">
                     <h3>Glücksburger Slot</h3>
                     <p>Slottet blev bygget 1583-1587. Bygherren Hertug Johann der Jüngere af Slesvig-Holsten-Sønderborg (1545-1622) var en søn af den danske konge Christian III. Han er stamfader til de forskellige linjer i fyrstehusene Slesvig-Holsten-Sønderborg-Glücksburg, herunder Augustenburg, Glücksburg, Plön og Beck.</p>
@@ -37,7 +44,7 @@
                 </section>
             </a>
             <a href="https://www.oplev-sydslesvig.dk/rejsetips/cykelture-i-sydslesvig-halvoeen-holnis" target="_blank" class="dis-item">
-                <img src="https://images.noz-mhn.de/img/21906100/crop/cbase_16_9-w748-h420/2108828356/950910391/23-35671612.jpg" alt="Holnis spidsen">
+                <img src="https:/https://www.cykelfaergen.info/images.noz-mhn.de/img/21906100/crop/cbase_16_9-w748-h420/2108828356/950910391/23-35671612.jpg" alt="Holnis spidsen">
                 <section class="dis-item__content">
                     <h3>Holnis spidsen</h3>
                     <p>Lige øst for Flensborg strækker den smukke halvø Holnæs (Holnis) sig ud i Flensborg Fjord. Det er oplagt at gå på opdagelse på cykel, da regionen byder på mange små veje og stier langs vandet, gennem skove og langs marker, der ligger langt fra store landeveje. På denne måde er det over lange strækninger nemt at undgå store trafikerede veje.</p>
@@ -66,55 +73,51 @@
     <!-- <iframe src="https://alsturbaade.teambooking.dk/new-booking" width="100%" height="900px" frameborder="0"></iframe> -->
     <section class="info_container" id="rodsand">
         <section class="content">
-          	<section class="first">
-              <article class="second">
-                <?php require_once($root."/components/timetable.php");?>
-                <section class="ppad ppad-10 no-flex">
-                    <?php
+            <section class="first">
+                <article class="second">
+                    <?php require_once($root . "/components/timetable.php"); ?>
+                    <section class="ppad ppad-10 no-flex">
+                        <?php
                         createTimetable("Egernsund - Langballigau");
-                    ?>
-                </section>
-                <section>
-                    <?php
+                        ?>
+                    </section>
+                    <section>
+                        <?php
                         createTimetable("Egernsund - Flensburg");
-                    ?>
-                </section>
-                <script>
-                    document.querySelectorAll(".harbor").forEach((harbor, i) => {
-                        harbor.addEventListener("click", function() {
-                            this.querySelector(".arrow").classList.toggle("arrowUp");
-                            document.querySelectorAll(".departureTime")[i].classList.toggle("show");
+                        ?>
+                    </section>
+                    <script>
+                        document.querySelectorAll(".harbor").forEach((harbor, i) => {
+                            harbor.addEventListener("click", function() {
+                                this.querySelector(".arrow").classList.toggle("arrowUp");
+                                document.querySelectorAll(".departureTime")[i].classList.toggle("show");
 
+                            })
                         })
-                    })
-                    const isOpen = document.querySelectorAll(".current");
-                    isOpen.forEach((isOpen) => {
-                        if(isOpen != null){
-                            isOpen.parentElement.parentElement.parentElement.querySelectorAll(".arrowDown").forEach((arrow) => {
-                                arrow.classList.add("arrowUp");
-                            });
-                        }
-                    })
-                </script>
-                <div id="omnisend-embedded-v2-6530de25c4ed820c5e79cd2a"></div>
-              </article>
+                        const isOpen = document.querySelectorAll(".current");
+                        isOpen.forEach((isOpen) => {
+                            if (isOpen != null) {
+                                isOpen.parentElement.parentElement.parentElement.querySelectorAll(".arrowDown").forEach((arrow) => {
+                                    arrow.classList.add("arrowUp");
+                                });
+                            }
+                        })
+                    </script>
+                    <div id="omnisend-embedded-v2-6530de25c4ed820c5e79cd2a"></div>
+                </article>
             </section>
         </section>
     </section>
     <section class="info_container" id="prices">
         <div class="content">
             <section class="ticket-grid">
-                <? require_once($root."/components/tickets.php");?>
+                <? require_once($root . "/components/tickets.php"); ?>
                 <? tickets($db); ?>
             </section>
             <div class="disclaimer">
                 *Note: Husk på turen til Langballigau og/eller Flensborg at have dit pas med og hvis du har hund med skal også disse papirer være i orden.
             </div>
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-format="autorelaxed"
-                data-ad-client="ca-pub-0127874455675391"
-                data-ad-slot="2670682792"></ins>
+            <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-0127874455675391" data-ad-slot="2670682792"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
@@ -123,9 +126,16 @@
     <div class="fullWidthImage image-1"></div>
     <svg class="bgFlow" style="margin-top: 450px;" id="uuid-1e4377d2-38c0-407c-b373-e061c816eeb2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3262.82 1886.02">
         <defs>
-            <style>.uuid-8a559af5-71f7-42b9-a491-37a65dc99d98{fill:none;stroke:#056c6d;stroke-miterlimit:10;stroke-width:7px;}</style>
+            <style>
+                .uuid-8a559af5-71f7-42b9-a491-37a65dc99d98 {
+                    fill: none;
+                    stroke: #056c6d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 7px;
+                }
+            </style>
         </defs>
-        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07"/>
+        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07" />
     </svg>
     <section class="info_container">
         <section class="grid special-events ppad">
@@ -140,13 +150,20 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146774.47378467923!2d9.508668437412604!3d54.9143739133283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b34727dccecc71%3A0xfe70c36a6a000f79!2sCykelf%C3%A6rgen%20Flensborg%20fjord!5e0!3m2!1sen!2sdk!4v1679496942748!5m2!1sen!2sdk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="sponsore_container --top">
-        <? include($root."/assets/sponsers/sponsers.php")?>
+        <? include($root . "/assets/sponsers/sponsers.php") ?>
     </section>
     <svg class="bgFlow" id="uuid-1e4377d2-38c0-407c-b373-e061c816eeb2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3262.82 1886.02">
         <defs>
-            <style>.uuid-8a559af5-71f7-42b9-a491-37a65dc99d98{fill:none;stroke:#056c6d;stroke-miterlimit:10;stroke-width:7px;}</style>
+            <style>
+                .uuid-8a559af5-71f7-42b9-a491-37a65dc99d98 {
+                    fill: none;
+                    stroke: #056c6d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 7px;
+                }
+            </style>
         </defs>
-        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07"/>
+        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07" />
     </svg>
     <section class="mail-container">
         <div class="content">
@@ -157,88 +174,89 @@
         <div class="news_room_container">
             <h2>Nyeste pressemeddelser <a href="pressroom">flere nyheder <i class="arrow down-arrow"></i></a></h2>
             <div class="press_container">
-            	<div class="l_news-c up">
-                <?php
-    include($root . "/db.php");
-    if(isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK" || !isset($_COOKIE["region"])){
-		setlocale(LC_TIME, array('da_DA.UTF-8','da_DA@euro','da_DA','danish'));
-	}else if($_COOKIE["region"] == "de-DE"){
-		setlocale(LC_TIME, array('de_DE.UTF-8','de_DE@euro','de_DE','german'));
-	}
+                <div class="l_news-c up">
+                    <?php
+                    include($root . "/db.php");
+                    if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK" || !isset($_COOKIE["region"])) {
+                        setlocale(LC_TIME, array('da_DA.UTF-8', 'da_DA@euro', 'da_DA', 'danish'));
+                    } else if ($_COOKIE["region"] == "de-DE") {
+                        setlocale(LC_TIME, array('de_DE.UTF-8', 'de_DE@euro', 'de_DE', 'german'));
+                    }
 
-    $db = mysqli_connect($server, $user, $password,$database);
-	if(isset($_COOKIE["region"])){
-    	$lang = $_COOKIE["region"];
-    }else{
-    	$lang = "da-DK";
-    }
+                    $db = mysqli_connect($server, $user, $password, $database);
+                    if (isset($_COOKIE["region"])) {
+                        $lang = $_COOKIE["region"];
+                    } else {
+                        $lang = "da-DK";
+                    }
 
-    $year = date("Y");
+                    $year = date("Y");
 
-	$sql = mysqli_query($db, "SELECT * FROM newsroom WHERE published='1' AND lang='$lang' AND y = '$year' ORDER BY published_at DESC LIMIT 3");
-    
-    if($sql){
-        $row_num = $sql->num_rows;
-    }
-    $col = [
-        "landingcol-wide",
-        "landingcol-narrow",
-        "landingcol-small"
-    ];
+                    $sql = mysqli_query($db, "SELECT * FROM newsroom WHERE published='1' AND lang='$lang' AND y = '$year' ORDER BY published_at DESC LIMIT 3");
 
-    $co = [
-        "wide-img",
-        "narrow-img",
-        "small-img"
-    ];
+                    if ($sql) {
+                        $row_num = $sql->num_rows;
+                    }
+                    $col = [
+                        "landingcol-wide",
+                        "landingcol-narrow",
+                        "landingcol-small"
+                    ];
 
-    $c = [
-        "wide",
-        "normal",
-        "normal"
-    ];
+                    $co = [
+                        "wide-img",
+                        "narrow-img",
+                        "small-img"
+                    ];
 
-    $arrayLength = count($col);
-    $aL = count($c);
-    $i = -1;
+                    $c = [
+                        "wide",
+                        "normal",
+                        "normal"
+                    ];
 
-    function truncate($text, $chars = 200) {
-        if (strlen($text) <= $chars) {
-            return $text;
-        }
-        $text = $text." ";
-        $text = substr($text,0,$chars);
-        $text = substr($text,0,strrpos($text,' '));
-        $text = $text."...";
-        return $text;
-    }
+                    $arrayLength = count($col);
+                    $aL = count($c);
+                    $i = -1;
 
-	while(($row = $sql->fetch_assoc())){
-        $i++;
-        $main_title = $row["title"];
+                    function truncate($text, $chars = 200)
+                    {
+                        if (strlen($text) <= $chars) {
+                            return $text;
+                        }
+                        $text = $text . " ";
+                        $text = substr($text, 0, $chars);
+                        $text = substr($text, 0, strrpos($text, ' '));
+                        $text = $text . "...";
+                        return $text;
+                    }
 
-        $main_title = mb_convert_encoding($main_title, "UTF-8" , 'HTML-ENTITIES');
+                    while (($row = $sql->fetch_assoc())) {
+                        $i++;
+                        $main_title = $row["title"];
 
-		$img = $row["img"];
-		$byline = $row["byline"];
-        $plain = truncate($row["main_text"]);
-        
-        $plain = mb_convert_encoding($plain, "UTF-8" , 'HTML-ENTITIES');
+                        $main_title = mb_convert_encoding($main_title, "UTF-8", 'HTML-ENTITIES');
 
-		$category = $row["category"];
-		$plublished = strftime("%e. %B %Y", strtotime($row["published_at"]));
-        $url = 'pressroom/'.$row["y"].'/'.$row["m"].'/'.$row["link_title"];
+                        $img = $row["img"];
+                        $byline = $row["byline"];
+                        $plain = truncate($row["main_text"]);
 
-        if(strtolower($category) == "update"){
-            $style = "red";
-        }else if(strtolower($category) == "pressemeddelelse"){
-            $style = "blue";
-        }
-            $plain = mb_convert_encoding($plain, "HTML-ENTITIES", "UTF-8");
-            $main_title = mb_convert_encoding($main_title, "HTML-ENTITIES", "UTF-8");
-            $plublishedAt = $row["published_at"];
-        if($row_num >= "3"){
-        <<<EOD
+                        $plain = mb_convert_encoding($plain, "UTF-8", 'HTML-ENTITIES');
+
+                        $category = $row["category"];
+                        $plublished = strftime("%e. %B %Y", strtotime($row["published_at"]));
+                        $url = 'pressroom/' . $row["y"] . '/' . $row["m"] . '/' . $row["link_title"];
+
+                        if (strtolower($category) == "update") {
+                            $style = "red";
+                        } else if (strtolower($category) == "pressemeddelelse") {
+                            $style = "blue";
+                        }
+                        $plain = mb_convert_encoding($plain, "HTML-ENTITIES", "UTF-8");
+                        $main_title = mb_convert_encoding($main_title, "HTML-ENTITIES", "UTF-8");
+                        $plublishedAt = $row["published_at"];
+                        if ($row_num >= "3") {
+                            <<<EOD
             <a href="$url" class="news-content-link col col-block $col[$i] ">
                 <div class="news-content-front $c[$i]">
                     <div class="news-header-front $co[$i]"><img src="/newsroom/news-img/$img;" loading="lazy" class="news-img" alt="<?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>"></div>
@@ -255,8 +273,8 @@
                 </div>
             </a>
             EOD;
-                }else{
-                <<<EOD
+                        } else {
+                            <<<EOD
                     <a href="$url" class="news-content-link col col-block">
                         <div class="news-content-front">
                             <div class="news-header-front"><img src="/newsroom/news-img/$img" loading="lazy" class="news-img" alt="<?= mb_convert_encoding($main_title , 'HTML-ENTITIES', "UTF-8");?>"></div>
@@ -273,12 +291,12 @@
                         </div>
                     </a>
                     EOD;
-                }
-            }
-        ?>
+                        }
+                    }
+                    ?>
                 </div>
-              	</div>
             </div>
+        </div>
         </div>
     </section>
     <div class="fullWidthImage"></div>
@@ -289,51 +307,65 @@
     </section>
     <svg class="bgFlow" style="margin-top: -450px;" id="uuid-1e4377d2-38c0-407c-b373-e061c816eeb2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3262.82 1886.02">
         <defs>
-            <style>.uuid-8a559af5-71f7-42b9-a491-37a65dc99d98{fill:none;stroke:#056c6d;stroke-miterlimit:10;stroke-width:7px;}</style>
+            <style>
+                .uuid-8a559af5-71f7-42b9-a491-37a65dc99d98 {
+                    fill: none;
+                    stroke: #056c6d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 7px;
+                }
+            </style>
         </defs>
-        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07"/>
+        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07" />
     </svg>
     <svg class="bgFlow" style="margin-top: 450px;" id="uuid-1e4377d2-38c0-407c-b373-e061c816eeb2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3262.82 1886.02">
         <defs>
-            <style>.uuid-8a559af5-71f7-42b9-a491-37a65dc99d98{fill:none;stroke:#056c6d;stroke-miterlimit:10;stroke-width:7px;}</style>
+            <style>
+                .uuid-8a559af5-71f7-42b9-a491-37a65dc99d98 {
+                    fill: none;
+                    stroke: #056c6d;
+                    stroke-miterlimit: 10;
+                    stroke-width: 7px;
+                }
+            </style>
         </defs>
-        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07"/>
+        <path class="uuid-8a559af5-71f7-42b9-a491-37a65dc99d98" d="m146.63,0s-479.4,1034.59,1208.89,1003.34c1682.09-31.14,485.22,974.91-648.04,974.91-977.15,0-734.31,907.77,1115.92,873.07" />
     </svg>
     <section class="info_container faq-bg" id="faq">
         <span class="grdin-overlay"></span>
         <section class="content">
             <h2>FAQ - Frequent Asked Questions!</h2>
             <?php
-                $sql = "SELECT * FROM faqs WHERE question != 'Hvordan ser coronaregler ud?'";
-                $query = mysqli_query($db, $sql);
+            $sql = "SELECT * FROM faqs WHERE question != 'Hvordan ser coronaregler ud?'";
+            $query = mysqli_query($db, $sql);
 
-                while($row = $query->fetch_assoc()){
-                    $question = htmlspecialchars($row["question"]);
+            while ($row = $query->fetch_assoc()) {
+                $question = htmlspecialchars($row["question"]);
 
-                    $answer = htmlspecialchars($row["answer"]);
-                    echo '<article>
-                            <div class="accordion"><span class="arrow arrowDown"></span> '.$question.'</div>
+                $answer = htmlspecialchars($row["answer"]);
+                echo '<article>
+                            <div class="accordion"><span class="arrow arrowDown"></span> ' . $question . '</div>
                             <div class="panel">
                                 <section class="panel-ppad">
-                                    '.$answer.'
+                                    ' . $answer . '
                                 </section>
                             </div>
                         </article>
                         ';
-                }
-                
+            }
+
             ?>
         </section>
     </section>
-    
+
     <section class="info_container" id="about">
         <section class="content grid">
             <section>
                 <h2>Om Færgen</h2>
                 <p>Hver sommer sejler færgen Thjalfe fra Egernsund via Rendbjerg (Marina Minde) til Brunsnæs (Broagerland) og videre til Langballigau og retur.</p>
                 <p>Om fredagen og lørdagen sejler færgen Rødsand fra Egernsund via Sønderhav vider til Flensborg og retur.</p>
-                <p>    
-                Der findes utallige muligheder at kombinere sejlturen på Flensborg Fjord med oplevelser på landet. En skøn vandretur på den smukke Gendarmsti. Der kan selvfølgelig også nydes en lækker is ved havnene i Egernsund og Rendbjerg eller en lækker softice/hotdog i Sønderhav.
+                <p>
+                    Der findes utallige muligheder at kombinere sejlturen på Flensborg Fjord med oplevelser på landet. En skøn vandretur på den smukke Gendarmsti. Der kan selvfølgelig også nydes en lækker is ved havnene i Egernsund og Rendbjerg eller en lækker softice/hotdog i Sønderhav.
                 </p>
                 <p>Der kan selvfølgelig medtages cykler på færgen Rødsand og Thjalfe. Hvad med en udflugt på 2-hjul? Hvis du vil have din cykel med, bedes du huske, at reservere plads til denne, da pladsen på færgen er begrænset.</p>
             </section>
@@ -365,5 +397,5 @@
         <sup>1) Du bliver sendt til MobilePay hvor efter du kan med det sammen betale kontigentet på 100 kr. til Foreningen.</sup>
     </section> -->
     <img class="fullwidth-img" src="<?php echo $root; ?>/assets/gendarmstien/IMG_1327.jpg" alt="Happy people enjoying a ferry ride" srcset="<?php echo $root; ?>/assets/gendarmstien/IMG_1327-480w.jpg 480w, <?php echo $root; ?>/assets/gendarmstien/IMG_1327-800w.jpg 800w, <?php echo $root; ?>/assets/gendarmstien/IMG_1327.jpg 1200w">
-    <?php include($root."/components/trustpilot-integration.php"); ?>
+    <?php include($root . "/components/trustpilot-integration.php"); ?>
 </main>

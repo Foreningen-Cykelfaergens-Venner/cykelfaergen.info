@@ -2,11 +2,11 @@
 /* ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); */
-ini_set("session_cookie.domain", ".".preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]));
+ini_set("session_cookie.domain", "." . preg_replace("/^(.*?)\.(.*)$/", "$2", $_SERVER["HTTP_HOST"]));
 session_start();
 //echo $ip;
-$mainHost = "www.".preg_replace("/^(.*?)\.(.*)$/","$2", $_SERVER["HTTP_HOST"]);
-$img = "https://".$mainHost."/images/bg/sonderborg/Byens havn (2).jpg";
+$mainHost = "www." . preg_replace("/^(.*?)\.(.*)$/", "$2", $_SERVER["HTTP_HOST"]);
+$img = "https://" . $mainHost . "https://www.cykelfaergen.info/images/bg/sonderborg/Byens havn (2).jpg";
 ?>
 <?
 if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "da-DK" || !isset($_COOKIE["region"])) {

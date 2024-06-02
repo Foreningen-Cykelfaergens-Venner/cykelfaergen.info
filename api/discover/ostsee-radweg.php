@@ -121,7 +121,7 @@ if (!isset($_COOKIE["region"]) && $_SERVER["HTTP_HOST"] == "www.fahrradfaehre.in
     $lang = "da-DK";
 }
 
-$img = "https://" . $_SERVER["HTTP_HOST"] . "/images/discover/Copright Dagmar Trepins.jpg";
+$img = "https://" . $_SERVER["HTTP_HOST"] . "https://www.cykelfaergen.info/images/discover/Copright Dagmar Trepins.jpg";
 
 ?>
 <?php
@@ -129,7 +129,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
 ?>
 <main class="container content">
     <section>
-        <h1>Østersøen - En Cykelrejse gennem Skønhed, Historie og Kultur</h1>   
+        <h1>Østersøen - En Cykelrejse gennem Skønhed, Historie og Kultur</h1>
         <p>Med en af de smukkeste cykelstier i hele Tyskland lokker Østersøen hvert år mange besøgende og turister. Den maritime atmosfære kan naturligvis bedst nydes på en rejsecykel. Der er mange rejser, der tilbyder muligheden for at udforske Østersøen selvstændigt.</p>
         <p>Hvis du er interesseret i Østersø-cykelrejser, kan du finde masser af information på denne side. Alt fra forskellige rejseruter, natur, hoteller til litteratur og rejsearrangører.</p>
         <p>Østersøen byder på en interessant blanding af en forfriskende salt havbrise og krydret skovluft. På din cykeltur kan du se frem til kulinariske højdepunkter, især de velsmagende fiskeretter.</p>

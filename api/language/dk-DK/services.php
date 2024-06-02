@@ -5,7 +5,7 @@
             <p>Med over 3000 km cykelruter er Sønderjylland den oplagte feriedestination for cyklister. Ideel til at kombinere din cykeltur med en bådtur.</p>
         </section>
         <section class="about__imageContainer">
-            <img class="overlap-bottom aboutSmallImages" src="/images/personen-about/fähre-auf-der-flensburger-foerde-entlang-der-kueste.jpg" alt="Fähre auf der Flensburger Förde mit Personen">
+            <img class="overlap-bottom aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/fähre-auf-der-flensburger-foerde-entlang-der-kueste.jpg" alt="Fähre auf der Flensburger Förde mit Personen">
         </section>
     </section>
 </section>
@@ -13,7 +13,7 @@
     <section class="about__bg split-tout--padding-top">
         <section class="grid content Tpadding">
             <section class="about__imageContainer reverse">
-                <img class="overlap-bottom aboutSmallImages" src="/images/personen-about/dannebrog-hinter-der-ms-roedsand-im-winde.jpg" alt="Dannebrog hinter der Fähre im Winde">
+                <img class="overlap-bottom aboutSmallImages" src="https://www.cykelfaergen.info/images/personen-about/dannebrog-hinter-der-ms-roedsand-im-winde.jpg" alt="Dannebrog hinter der Fähre im Winde">
             </section>
             <section class="about-content">
                 <p>Book en færgetur fra Langballigau til Brunsnæs eller videre til Egernsund. Herfra kan du cykle langs den 250 km lange kystlinje og opleve kongelige slotte, det historiske grænseland og smukke naturlandskaber. Du kan finde detaljerede oplysninger og forslag til ture her: <a href="https://www.visitsonderjylland.dk/turist/oplevelser/cykling/cykelferie" target="_blank" rel="nofollow noopener">På cykelferie i Sønderjylland | læs mere og book din næste oplevelse (visitsonderjylland.dk)</a></p>

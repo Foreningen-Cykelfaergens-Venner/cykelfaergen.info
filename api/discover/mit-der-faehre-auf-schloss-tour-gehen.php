@@ -10,7 +10,7 @@ if (isset($_GET["page_id"]) || $_SERVER["HTTP_HOST"] == "de.cykelfaergen.info" |
     die();
 }
 
-if(isset($_COOKIE["region"]) && $_COOKIE["region"] == "en-GB" && $_SERVER["REQUEST_URI"] !== "/discover/with-your-bike-on-royal-tour"){
+if (isset($_COOKIE["region"]) && $_COOKIE["region"] == "en-GB" && $_SERVER["REQUEST_URI"] !== "/discover/with-your-bike-on-royal-tour") {
     header("Location: /discover/with-your-bike-on-royal-tour");
 }
 
@@ -137,14 +137,14 @@ if (!isset($_COOKIE["region"]) && $_SERVER["HTTP_HOST"] == "www.fahrradfaehre.in
     $lang = "da-DK";
 }
 
-$img = "https://" . $_SERVER["HTTP_HOST"] . "/images/discover/Copright Dagmar Trepins.jpg";
+$img = "https://" . $_SERVER["HTTP_HOST"] . "https://www.cykelfaergen.info/images/discover/Copright Dagmar Trepins.jpg";
 
 ?>
 <?
 include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
 ?>
 <main class="container">
-    <img src="/images/discover/Copright Dagmar Trepins.jpg" class="banner__image" alt="Die Königlich leibgarde marschiert in Gravenstein / Gråsten - vorbei der Königen">
+    <img src="https://www.cykelfaergen.info/images/discover/Copright Dagmar Trepins.jpg" class="banner__image" alt="Die Königlich leibgarde marschiert in Gravenstein / Gråsten - vorbei der Königen">
     <article class="content">
         <h1>Mit der Fahrradfähre auf Schlosstour</h1>
         <h2>Royale Momente in Gråsten</h2>
@@ -152,17 +152,17 @@ include($_SERVER["DOCUMENT_ROOT"] . "/components/header.php");
             <p>Eine der schönsten Sehenswürdigkeiten in Gråsten ist das Schloss. Jedes Jahr im Sommer verbringt dort die königliche Familie ihre Sommerferien. Genieße die maritime Fahrt mit der Fahrradfähre und verbinde sie mit einer Radtour oder Wanderung zum Schloss. Hier sind die wichtigsten Highlights, um royale Momente zu erleben:</p>
         </section>
         <section class="grid">
-            <img src="/images/discover/Copright Dagmar Trepins.jpg" alt="Die Königlich leibgarde marschiert in Gravenstein / Gråsten - vorbei der Königen">
+            <img src="https://www.cykelfaergen.info/images/discover/Copright Dagmar Trepins.jpg" alt="Die Königlich leibgarde marschiert in Gravenstein / Gråsten - vorbei der Königen">
             <p>Wenn die Königin im Sommer in Gråsten eintrifft, findet der offizielle Empfang von Königin Margrethe auf dem Marktplatz (Torvet) statt. Ein festlicher Augenblick für Bewohner und Besucher, die Königin einmal aus direkter Nähe zu sehen. Während des königlichen Besuchs kann man täglich den Schichtwechsel der königlichen Leibgarde erleben.</p>
             <p>Die Wachablösung beginnt am Det Gule Palæ, Ahlefeldtvej 5, wo sich die neue Schicht um etwa 11:30 Uhr aufstellt. Von hier aus marschieren sie durch Gråsten über die Straßen Borggade, Torvet und Slotsgade zum Schloss, wo die Wachablösung um 12:00 Uhr stattfindet. Wenn Königin Margrethe im Schloss residiert, nimmt das Musikkorps der königlichen Leibgarde freitags an der Wachablösung teil und gibt anschließend ein kleines Konzert im Schlosshof. Auch hier kannst du einen Blick auf die königliche Familie werfen.</p>
         </section>
         <section class="grid">
             <p>Für royale Fans und Gartenfreunde lohnt sich auch ein Abstecher zum königlichen Küchengarten. Der 2020 fertig angelegte und 7.500 Quadratmeter große Küchengarten liegt oberhalb vom Schlosspark des Schlosses Gråsten und ist in der Hochsaison im Juli und August täglich von 11:00 Uhr bis 17:00 Uhr geöffnet. Der schöne Küchengarten lädt zum Verweilen ein. Lass den Rundgang gemütlich bei Kaffee und Kuchen im kleinen Café im Gewächshaus ausklingen. Wer von Blumen und Gärten nicht genug bekommen kann, sollte auf der Rückfahrt unbedingt noch einen Zwischenstopp im „Erzählgarten“ am Hafen von Gråsten einlegen. Hier entstand ein wunderschöner Wild- und Naturgarten im Rahmen des Projekts „Blumen Bauen Brücken“, gefördert durch das deutsch-dänische Interreg-Programm. Einmal kräftig Wildblumen schnuppern und dann geht es ganz entspannt zurück zum Fähranleger.</p>
-            <img src="/images/discover/Copyright BBB Blumen Bauen Brücken.jpg" alt="Der Königliche Schlossgarten in Gravenstein / Gråsten">
+            <img src="https://www.cykelfaergen.info/images/discover/Copyright BBB Blumen Bauen Brücken.jpg" alt="Der Königliche Schlossgarten in Gravenstein / Gråsten">
         </section>
         <section>
             <p><strong>Unser Tipp:</strong> Starte deine Schlosstour von Langballigau aus mit der Fahrradfähre nach Brunsnæs oder weiter bis nach Marina Minde / Egernsund. Von Egernsund aus radelst du ungefähr fünf Minuten bis nach Gråsten, wo sich die Sommerresidenz der königlichen Familie befindet.
-Unseren Sommerfahrplan findest du hier: <a href="/#rodsand">Fahrplan</a></p>
+                Unseren Sommerfahrplan findest du hier: <a href="/#rodsand">Fahrplan</a></p>
         </section>
         <section>
             <h4>Links für weitere informationen</h4>
@@ -173,16 +173,16 @@ Unseren Sommerfahrplan findest du hier: <a href="/#rodsand">Fahrplan</a></p>
             </p>
         </section>
         <section>
-           <p>
-               Fotohinweise
+            <p>
+                Fotohinweise
                 Foto: Königlicher Empfang in Gråsten &copy;Dagmar Trepins<br>
                 Foto: Wachablösung vor dem Schloss &copy; Dagmar Trepins<br>
                 Foto: Schloss Gråsten und königlicher Küchengarten &copy; Destination Sønderjylland<br>
                 Foto: Erzählgarten Gråsten &copy; BBB Blumen Bauen Brücken
 
-           </p> 
+            </p>
         </section>
     </article>
 </main>
-<? include($_SERVER["DOCUMENT_ROOT"] . "/language/".$region."/footer.php");?>
-<? include($_SERVER["DOCUMENT_ROOT"]."/scripts/script.php");?>
+<? include($_SERVER["DOCUMENT_ROOT"] . "/language/" . $region . "/footer.php"); ?>
+<? include($_SERVER["DOCUMENT_ROOT"] . "/scripts/script.php"); ?>
